@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Matchers.isNull;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.model.GlideUrl;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.model.GlideUrl;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;

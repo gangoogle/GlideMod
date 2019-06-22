@@ -1,9 +1,9 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.ProcessorUtil.nonNulls;
+import static com.gangoogle.glide.annotation.compiler.ProcessorUtil.nonNulls;
 
-import com.bumptech.glide.annotation.GlideOption;
-import com.bumptech.glide.annotation.GlideType;
+import com.gangoogle.glide.annotation.GlideOption;
+import com.gangoogle.glide.annotation.GlideType;
 import com.google.common.base.Function;
 import com.google.common.collect.FluentIterable;
 import com.squareup.javapoet.ClassName;
@@ -23,7 +23,7 @@ import javax.lang.model.type.TypeMirror;
 import javax.tools.Diagnostic.Kind;
 
 /**
- * Validates that classes annotated with {@link com.bumptech.glide.annotation.GlideExtension}
+ * Validates that classes annotated with {@link com.gangoogle.glide.annotation.GlideExtension}
  * contains methods with the expected format.
  *
  * <p>Validation is performed so that errors can be found when a library is compiled. Without

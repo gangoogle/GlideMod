@@ -1,9 +1,9 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor.DEBUG;
+import static com.gangoogle.glide.annotation.compiler.GlideAnnotationProcessor.DEBUG;
 
-import com.bumptech.glide.annotation.GlideExtension;
-import com.bumptech.glide.annotation.GlideOption;
+import com.gangoogle.glide.annotation.GlideExtension;
+import com.gangoogle.glide.annotation.GlideOption;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Predicate;

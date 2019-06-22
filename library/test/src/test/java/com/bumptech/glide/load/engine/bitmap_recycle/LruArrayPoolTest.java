@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.bitmap_recycle;
+package com.gangoogle.glide.load.engine.bitmap_recycle;
 
 import static android.content.ComponentCallbacks2.TRIM_MEMORY_BACKGROUND;
 import static android.content.ComponentCallbacks2.TRIM_MEMORY_COMPLETE;

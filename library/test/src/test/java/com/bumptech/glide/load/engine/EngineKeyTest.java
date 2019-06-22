@@ -1,14 +1,14 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
 import static org.junit.Assert.assertThrows;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Option;
-import com.bumptech.glide.load.Option.CacheKeyUpdater;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.signature.ObjectKey;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Option;
+import com.gangoogle.glide.load.Option.CacheKeyUpdater;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.signature.ObjectKey;
 import com.google.common.testing.EqualsTester;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

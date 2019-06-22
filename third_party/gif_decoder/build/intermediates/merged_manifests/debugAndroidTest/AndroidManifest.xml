@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bumptech.glide.gifdecoder.test" >
+    package="com.gangoogle.glideMod.gifdecoder.test" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -10,8 +10,8 @@
         android:name="android.test.InstrumentationTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.bumptech.glide.gifdecoder.test"
-        android:targetPackage="com.bumptech.glide.gifdecoder.test" />
+        android:label="Tests for com.gangoogle.glideMod.gifdecoder.test"
+        android:targetPackage="com.gangoogle.glideMod.gifdecoder.test" />
 
     <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />

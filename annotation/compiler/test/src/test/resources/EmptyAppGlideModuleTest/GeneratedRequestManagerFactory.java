@@ -1,11 +1,11 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
-import com.bumptech.glide.manager.Lifecycle;
-import com.bumptech.glide.manager.RequestManagerRetriever;
-import com.bumptech.glide.manager.RequestManagerTreeNode;
-import com.bumptech.glide.test.GlideRequests;
+import com.gangoogle.glide.manager.Lifecycle;
+import com.gangoogle.glide.manager.RequestManagerRetriever;
+import com.gangoogle.glide.manager.RequestManagerTreeNode;
+import com.gangoogle.glide.test.GlideRequests;
 
 /**
  * Generated code, do not modify

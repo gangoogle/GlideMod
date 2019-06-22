@@ -1,9 +1,9 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
 import android.util.Log;
-import com.bumptech.glide.test.AppModuleWithLibraryInPackage;
+import com.gangoogle.glide.test.AppModuleWithLibraryInPackage;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,7 +39,7 @@ final class GeneratedAppGlideModuleImpl extends GeneratedAppGlideModule {
   @NonNull
   public Set<Class<?>> getExcludedModuleClasses() {
     Set<Class<?>> excludedClasses = new HashSet<Class<?>>();
-    excludedClasses.add(com.bumptech.glide.test._package.LibraryModuleInPackage.class);
+    excludedClasses.add(com.gangoogle.glide.test._package.LibraryModuleInPackage.class);
     return excludedClasses;
   }
 

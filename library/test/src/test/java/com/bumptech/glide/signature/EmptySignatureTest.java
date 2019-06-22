@@ -1,9 +1,9 @@
-package com.bumptech.glide.signature;
+package com.gangoogle.glide.signature;
 
 import static org.mockito.Mockito.mock;
 
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.tests.KeyTester;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.tests.KeyTester;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;

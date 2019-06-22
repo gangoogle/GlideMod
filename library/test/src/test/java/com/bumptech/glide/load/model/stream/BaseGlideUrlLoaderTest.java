@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model.stream;
+package com.gangoogle.glide.load.model.stream;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -10,13 +10,13 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.data.DataFetcher;
-import com.bumptech.glide.load.model.GlideUrl;
-import com.bumptech.glide.load.model.ModelCache;
-import com.bumptech.glide.load.model.ModelLoader;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.data.DataFetcher;
+import com.gangoogle.glide.load.model.GlideUrl;
+import com.gangoogle.glide.load.model.ModelCache;
+import com.gangoogle.glide.load.model.ModelLoader;
+import com.gangoogle.glide.util.Preconditions;
 import java.io.InputStream;
 import org.junit.Before;
 import org.junit.Test;

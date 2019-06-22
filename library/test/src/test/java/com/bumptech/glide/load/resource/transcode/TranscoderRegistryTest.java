@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.transcode;
+package com.gangoogle.glide.load.resource.transcode;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

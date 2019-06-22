@@ -1,11 +1,11 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import android.support.annotation.Nullable;
-import com.bumptech.glide.load.model.LazyHeaders.Builder;
+import com.gangoogle.glide.load.model.LazyHeaders.Builder;
 import com.google.common.testing.EqualsTester;
 import java.util.Map;
 import org.junit.After;

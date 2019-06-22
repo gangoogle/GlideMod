@@ -1,6 +1,6 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
-import static com.bumptech.glide.tests.Util.cast;
+import static com.gangoogle.glide.tests.Util.cast;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -10,8 +10,8 @@ import static org.mockito.Mockito.verify;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.bumptech.glide.request.target.SizeReadyCallback;
-import com.bumptech.glide.request.target.Target;
+import com.gangoogle.glide.request.target.SizeReadyCallback;
+import com.gangoogle.glide.request.target.Target;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

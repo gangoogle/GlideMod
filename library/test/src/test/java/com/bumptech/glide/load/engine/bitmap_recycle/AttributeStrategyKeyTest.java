@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.bitmap_recycle;
+package com.gangoogle.glide.load.engine.bitmap_recycle;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -7,7 +7,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 import android.graphics.Bitmap;
-import com.bumptech.glide.load.engine.bitmap_recycle.AttributeStrategy.Key;
+import com.gangoogle.glide.load.engine.bitmap_recycle.AttributeStrategy.Key;
 import com.google.common.testing.EqualsTester;
 import org.junit.Before;
 import org.junit.Test;

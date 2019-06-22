@@ -1,6 +1,6 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
-import static com.bumptech.glide.tests.BackgroundUtil.testInBackground;
+import static com.gangoogle.glide.tests.BackgroundUtil.testInBackground;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyBoolean;
 import static org.mockito.Matchers.eq;
@@ -12,16 +12,16 @@ import static org.mockito.Mockito.when;
 
 import android.app.Application;
 import android.widget.ImageView;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.resource.SimpleResource;
-import com.bumptech.glide.request.Request;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.SingleRequest;
-import com.bumptech.glide.request.target.Target;
-import com.bumptech.glide.request.target.ViewTarget;
-import com.bumptech.glide.tests.BackgroundUtil.BackgroundTester;
-import com.bumptech.glide.tests.TearDownGlide;
+import com.gangoogle.glide.load.DataSource;
+import com.gangoogle.glide.load.resource.SimpleResource;
+import com.gangoogle.glide.request.Request;
+import com.gangoogle.glide.request.RequestListener;
+import com.gangoogle.glide.request.RequestOptions;
+import com.gangoogle.glide.request.SingleRequest;
+import com.gangoogle.glide.request.target.Target;
+import com.gangoogle.glide.request.target.ViewTarget;
+import com.gangoogle.glide.tests.BackgroundUtil.BackgroundTester;
+import com.gangoogle.glide.tests.TearDownGlide;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

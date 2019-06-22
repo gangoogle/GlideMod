@@ -1,4 +1,4 @@
-package com.bumptech.glide.tests;
+package com.gangoogle.glide.tests;
 
 public final class BackgroundUtil {
 

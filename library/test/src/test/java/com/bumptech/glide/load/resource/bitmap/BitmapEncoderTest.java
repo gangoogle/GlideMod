@@ -1,6 +1,6 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,12 +8,12 @@ import static org.mockito.Mockito.when;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
-import com.bumptech.glide.load.EncodeStrategy;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.util.ByteBufferUtil;
+import com.gangoogle.glide.load.EncodeStrategy;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.load.engine.bitmap_recycle.ArrayPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.util.ByteBufferUtil;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;

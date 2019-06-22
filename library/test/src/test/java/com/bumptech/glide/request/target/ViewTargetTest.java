@@ -1,4 +1,4 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static android.view.ViewGroup.LayoutParams;
 import static android.view.ViewTreeObserver.OnPreDrawListener;
@@ -24,10 +24,10 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.bumptech.glide.request.Request;
-import com.bumptech.glide.request.transition.Transition;
-import com.bumptech.glide.tests.Util;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.request.Request;
+import com.gangoogle.glide.request.transition.Transition;
+import com.gangoogle.glide.tests.Util;
+import com.gangoogle.glide.util.Preconditions;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

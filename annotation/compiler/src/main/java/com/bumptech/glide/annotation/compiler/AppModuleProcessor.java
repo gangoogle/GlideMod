@@ -1,6 +1,6 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import com.bumptech.glide.annotation.GlideModule;
+import com.gangoogle.glide.annotation.GlideModule;
 import com.squareup.javapoet.TypeSpec;
 import java.util.ArrayList;
 import java.util.Collections;

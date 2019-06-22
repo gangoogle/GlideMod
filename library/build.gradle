@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group ='com.github.gangoogle' //Github域名
+
 
 //if (!hasProperty('DISABLE_ERROR_PRONE')) {
 //    apply plugin: "net.ltgt.errorprone"

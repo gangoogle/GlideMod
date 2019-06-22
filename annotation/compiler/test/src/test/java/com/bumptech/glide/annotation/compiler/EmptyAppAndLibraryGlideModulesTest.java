@@ -1,19 +1,19 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.test.Util.annotation;
-import static com.bumptech.glide.annotation.compiler.test.Util.appResource;
-import static com.bumptech.glide.annotation.compiler.test.Util.emptyAppModule;
-import static com.bumptech.glide.annotation.compiler.test.Util.emptyLibraryModule;
-import static com.bumptech.glide.annotation.compiler.test.Util.glide;
-import static com.bumptech.glide.annotation.compiler.test.Util.libraryResource;
-import static com.bumptech.glide.annotation.compiler.test.Util.subpackage;
+import static com.gangoogle.glide.annotation.compiler.test.Util.annotation;
+import static com.gangoogle.glide.annotation.compiler.test.Util.appResource;
+import static com.gangoogle.glide.annotation.compiler.test.Util.emptyAppModule;
+import static com.gangoogle.glide.annotation.compiler.test.Util.emptyLibraryModule;
+import static com.gangoogle.glide.annotation.compiler.test.Util.glide;
+import static com.gangoogle.glide.annotation.compiler.test.Util.libraryResource;
+import static com.gangoogle.glide.annotation.compiler.test.Util.subpackage;
 import static com.google.testing.compile.CompilationSubject.assertThat;
 import static com.google.testing.compile.Compiler.javac;
 
-import com.bumptech.glide.annotation.compiler.test.CompilationProvider;
-import com.bumptech.glide.annotation.compiler.test.ReferencedResource;
-import com.bumptech.glide.annotation.compiler.test.RegenerateResourcesRule;
-import com.bumptech.glide.annotation.compiler.test.Util;
+import com.gangoogle.glide.annotation.compiler.test.CompilationProvider;
+import com.gangoogle.glide.annotation.compiler.test.ReferencedResource;
+import com.gangoogle.glide.annotation.compiler.test.RegenerateResourcesRule;
+import com.gangoogle.glide.annotation.compiler.test.Util;
 import com.google.common.truth.Truth;
 import com.google.testing.compile.Compilation;
 import java.io.IOException;
@@ -25,8 +25,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Tests adding both an empty {@link com.bumptech.glide.module.AppGlideModule} and an empty {@link
- * com.bumptech.glide.module.LibraryGlideModule} in a single project.
+ * Tests adding both an empty {@link com.gangoogle.glide.module.AppGlideModule} and an empty {@link
+ * com.gangoogle.glide.module.LibraryGlideModule} in a single project.
  */
 @RunWith(JUnit4.class)
 public class EmptyAppAndLibraryGlideModulesTest implements CompilationProvider {

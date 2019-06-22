@@ -1,4 +1,4 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -8,7 +8,7 @@ import static org.mockito.Mockito.verify;
 
 import android.app.Activity;
 import androidx.fragment.app.FragmentActivity;
-import com.bumptech.glide.RequestManager;
+import com.gangoogle.glide.RequestManager;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

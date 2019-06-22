@@ -1,4 +1,4 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Matchers.anyBoolean;
@@ -11,7 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import com.bumptech.glide.manager.DefaultConnectivityMonitorTest.PermissionConnectivityManager;
+import com.gangoogle.glide.manager.DefaultConnectivityMonitorTest.PermissionConnectivityManager;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;

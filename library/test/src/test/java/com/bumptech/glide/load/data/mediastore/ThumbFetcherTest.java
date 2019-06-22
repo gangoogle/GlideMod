@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data.mediastore;
+package com.gangoogle.glide.load.data.mediastore;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Matchers.isNotNull;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.when;
 
 import android.net.Uri;
 import android.provider.MediaStore;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.data.DataFetcher;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.data.DataFetcher;
 import java.io.InputStream;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,18 +1,18 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.doAnswer;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Option;
-import com.bumptech.glide.load.Option.CacheKeyUpdater;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.signature.ObjectKey;
-import com.bumptech.glide.tests.KeyTester;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Option;
+import com.gangoogle.glide.load.Option.CacheKeyUpdater;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.signature.ObjectKey;
+import com.gangoogle.glide.tests.KeyTester;
+import com.gangoogle.glide.tests.Util;
 import java.security.MessageDigest;
 import java.util.Arrays;
 import org.junit.Before;

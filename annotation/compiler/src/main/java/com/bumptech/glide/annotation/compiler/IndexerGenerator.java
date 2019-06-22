@@ -1,7 +1,7 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import com.bumptech.glide.annotation.GlideExtension;
-import com.bumptech.glide.annotation.GlideModule;
+import com.gangoogle.glide.annotation.GlideExtension;
+import com.gangoogle.glide.annotation.GlideModule;
 import com.squareup.javapoet.AnnotationSpec;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.TypeSpec;

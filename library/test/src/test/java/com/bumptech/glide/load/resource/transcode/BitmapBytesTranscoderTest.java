@@ -1,14 +1,14 @@
-package com.bumptech.glide.load.resource.transcode;
+package com.gangoogle.glide.load.resource.transcode;
 
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.graphics.Bitmap;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.util.Preconditions;
 import java.io.ByteArrayOutputStream;
 import org.junit.Before;
 import org.junit.Test;

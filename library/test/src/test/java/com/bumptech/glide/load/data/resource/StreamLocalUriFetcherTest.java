@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data.resource;
+package com.gangoogle.glide.load.data.resource;
 
 import static org.mockito.Matchers.isA;
 import static org.mockito.Matchers.isNotNull;
@@ -7,10 +7,10 @@ import static org.mockito.Mockito.verify;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.data.DataFetcher;
-import com.bumptech.glide.load.data.StreamLocalUriFetcher;
-import com.bumptech.glide.tests.ContentResolverShadow;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.data.DataFetcher;
+import com.gangoogle.glide.load.data.StreamLocalUriFetcher;
+import com.gangoogle.glide.tests.ContentResolverShadow;
 import java.io.ByteArrayInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;

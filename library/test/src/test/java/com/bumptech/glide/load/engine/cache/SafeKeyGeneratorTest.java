@@ -1,9 +1,9 @@
-package com.bumptech.glide.load.engine.cache;
+package com.gangoogle.glide.load.engine.cache;
 
 import static org.junit.Assert.assertTrue;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
+import com.gangoogle.glide.load.Key;
 import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static com.google.common.truth.Truth.assertThat;
 

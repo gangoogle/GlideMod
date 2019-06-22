@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.os.ParcelFileDescriptor;
-import com.bumptech.glide.Priority;
+import com.gangoogle.glide.Priority;
 import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;

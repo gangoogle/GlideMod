@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -9,11 +9,11 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.when;
 
 import android.net.Uri;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.data.DataFetcher;
-import com.bumptech.glide.tests.Util;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.data.DataFetcher;
+import com.gangoogle.glide.tests.Util;
+import com.gangoogle.glide.util.Preconditions;
 import java.io.File;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-/** Tests for the {@link com.bumptech.glide.load.model.StringLoader} class. */
+/** Tests for the {@link com.gangoogle.glide.load.model.StringLoader} class. */
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = 18)
 public class StringLoaderTest {

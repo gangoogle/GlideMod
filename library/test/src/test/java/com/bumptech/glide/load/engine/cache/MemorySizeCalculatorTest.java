@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.cache;
+package com.gangoogle.glide.load.engine.cache;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.mock;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.when;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
-import com.bumptech.glide.load.engine.cache.MemorySizeCalculatorTest.LowRamActivityManager;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.load.engine.cache.MemorySizeCalculatorTest.LowRamActivityManager;
+import com.gangoogle.glide.tests.Util;
 import com.google.common.collect.Range;
 import org.junit.After;
 import org.junit.Before;

@@ -1,7 +1,7 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import com.bumptech.glide.annotation.GlideExtension;
-import com.bumptech.glide.annotation.GlideOption;
+import com.gangoogle.glide.annotation.GlideExtension;
+import com.gangoogle.glide.annotation.GlideOption;
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Predicate;
@@ -188,7 +188,7 @@ final class RequestBuilderGenerator {
   }
   /**
    * Generates methods with equivalent names and arguments to methods annotated with {@link
-   * GlideOption} in {@link com.bumptech.glide.annotation.GlideExtension}s that return our generated
+   * GlideOption} in {@link com.gangoogle.glide.annotation.GlideExtension}s that return our generated
    * {@code com.bumptech.glide.RequestBuilder} subclass.
    */
   private List<MethodSpec> generateGeneratedRequestOptionsEquivalents(

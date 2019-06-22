@@ -1,11 +1,11 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.request.Request;
+import com.gangoogle.glide.RequestManager;
+import com.gangoogle.glide.request.Request;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

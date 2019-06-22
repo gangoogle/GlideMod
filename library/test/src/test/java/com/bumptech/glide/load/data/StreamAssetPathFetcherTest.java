@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.never;
@@ -6,7 +6,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.res.AssetManager;
-import com.bumptech.glide.Priority;
+import com.gangoogle.glide.Priority;
 import java.io.IOException;
 import java.io.InputStream;
 import org.junit.Before;

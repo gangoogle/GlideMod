@@ -1,4 +1,4 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
 @Index(
     modules = "com.bumptech.glide.test.EmptyLibraryModule"

@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.file;
+package com.gangoogle.glide.load.resource.file;
 
 import static org.junit.Assert.assertEquals;
 

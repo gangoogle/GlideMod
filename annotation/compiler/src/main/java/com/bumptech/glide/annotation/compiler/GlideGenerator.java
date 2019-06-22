@@ -1,6 +1,6 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import com.bumptech.glide.annotation.GlideExtension;
+import com.gangoogle.glide.annotation.GlideExtension;
 import com.google.common.base.Function;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
@@ -24,7 +24,7 @@ import javax.lang.model.util.Elements;
  * (GlideApp.with(...)).
  *
  * <p>Generated {@code com.bumptech.glide.Glide} look-alikes look like this (note that the name is
- * configurable in {@link com.bumptech.glide.annotation.GlideModule}):
+ * configurable in {@link com.gangoogle.glide.annotation.GlideModule}):
  *
  * <pre>
  * <code>

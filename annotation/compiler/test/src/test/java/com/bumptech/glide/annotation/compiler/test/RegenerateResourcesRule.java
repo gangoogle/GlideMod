@@ -1,6 +1,6 @@
-package com.bumptech.glide.annotation.compiler.test;
+package com.gangoogle.glide.annotation.compiler.test;
 
-import static com.bumptech.glide.annotation.compiler.test.Util.asUnixChars;
+import static com.gangoogle.glide.annotation.compiler.test.Util.asUnixChars;
 
 import androidx.annotation.NonNull;
 import java.io.File;

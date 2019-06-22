@@ -1,4 +1,4 @@
-package com.bumptech.glide.util;
+package com.gangoogle.glide.util;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -11,7 +11,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream;
+import com.gangoogle.glide.load.resource.bitmap.RecyclableBufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.SocketTimeoutException;

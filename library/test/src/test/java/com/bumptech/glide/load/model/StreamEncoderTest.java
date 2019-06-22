@@ -1,10 +1,10 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static org.junit.Assert.assertEquals;
 
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.util.ByteBufferUtil;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.util.ByteBufferUtil;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;

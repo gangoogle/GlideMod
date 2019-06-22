@@ -1,11 +1,11 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static org.junit.Assert.fail;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.ArrayPool;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

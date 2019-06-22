@@ -1,11 +1,11 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.doAnswer;
 
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.tests.KeyTester;
-import com.bumptech.glide.tests.Util.WriteDigest;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.tests.KeyTester;
+import com.gangoogle.glide.tests.Util.WriteDigest;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

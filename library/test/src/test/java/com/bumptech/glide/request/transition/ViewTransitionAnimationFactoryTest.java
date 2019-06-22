@@ -1,4 +1,4 @@
-package com.bumptech.glide.request.transition;
+package com.gangoogle.glide.request.transition;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -11,7 +11,7 @@ import static org.mockito.Mockito.when;
 import android.content.Context;
 import android.view.View;
 import android.view.animation.Animation;
-import com.bumptech.glide.load.DataSource;
+import com.gangoogle.glide.load.DataSource;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -12,14 +12,14 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPoolAdapter;
-import com.bumptech.glide.tests.KeyTester;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.GlideBuilder;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPoolAdapter;
+import com.gangoogle.glide.tests.KeyTester;
+import com.gangoogle.glide.tests.Util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import org.junit.After;

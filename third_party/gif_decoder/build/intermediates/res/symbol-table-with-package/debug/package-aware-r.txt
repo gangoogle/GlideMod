@@ -1,1 +1,1 @@
-com.bumptech.glideMod.gifdecoder
+com.gangoogle.glideMod.gifdecoder

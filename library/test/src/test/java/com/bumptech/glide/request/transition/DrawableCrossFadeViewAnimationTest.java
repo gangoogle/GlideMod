@@ -1,6 +1,6 @@
-package com.bumptech.glide.request.transition;
+package com.gangoogle.glide.request.transition;
 
-import static com.bumptech.glide.request.transition.Transition.ViewAdapter;
+import static com.gangoogle.glide.request.transition.Transition.ViewAdapter;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;

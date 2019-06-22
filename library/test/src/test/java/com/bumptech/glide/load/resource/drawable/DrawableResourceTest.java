@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.drawable;
+package com.gangoogle.glide.load.resource.drawable;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertNotEquals;
@@ -10,7 +10,7 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.resource.gif.GifDrawable;
+import com.gangoogle.glide.load.resource.gif.GifDrawable;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

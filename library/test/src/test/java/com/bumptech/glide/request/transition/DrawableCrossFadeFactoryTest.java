@@ -1,10 +1,10 @@
-package com.bumptech.glide.request.transition;
+package com.gangoogle.glide.request.transition;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 import android.graphics.drawable.Drawable;
-import com.bumptech.glide.load.DataSource;
+import com.gangoogle.glide.load.DataSource;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

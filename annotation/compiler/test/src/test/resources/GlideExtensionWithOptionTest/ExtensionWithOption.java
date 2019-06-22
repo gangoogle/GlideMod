@@ -1,9 +1,9 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
 import androidx.annotation.NonNull;
-import com.bumptech.glide.annotation.GlideExtension;
-import com.bumptech.glide.annotation.GlideOption;
-import com.bumptech.glide.request.BaseRequestOptions;
+import com.gangoogle.glide.annotation.GlideExtension;
+import com.gangoogle.glide.annotation.GlideOption;
+import com.gangoogle.glide.request.BaseRequestOptions;
 
 @GlideExtension
 public final class ExtensionWithOption {

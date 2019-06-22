@@ -1,4 +1,4 @@
-package com.bumptech.glide.tests;
+package com.gangoogle.glide.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -9,9 +9,9 @@ import static org.mockito.Mockito.mock;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.data.DataFetcher;
-import com.bumptech.glide.load.engine.Resource;
+import com.gangoogle.glide.load.DataSource;
+import com.gangoogle.glide.load.data.DataFetcher;
+import com.gangoogle.glide.load.engine.Resource;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

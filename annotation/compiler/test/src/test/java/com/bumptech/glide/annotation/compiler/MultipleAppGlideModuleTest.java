@@ -1,12 +1,12 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
 import static com.google.testing.compile.CompilationSubject.assertThat;
 import static com.google.testing.compile.Compiler.javac;
 import static org.junit.Assert.assertThrows;
 
-import com.bumptech.glide.annotation.compiler.test.CompilationProvider;
-import com.bumptech.glide.annotation.compiler.test.RegenerateResourcesRule;
-import com.bumptech.glide.annotation.compiler.test.Util;
+import com.gangoogle.glide.annotation.compiler.test.CompilationProvider;
+import com.gangoogle.glide.annotation.compiler.test.RegenerateResourcesRule;
+import com.gangoogle.glide.annotation.compiler.test.Util;
 import com.google.testing.compile.Compilation;
 import javax.tools.JavaFileObject;
 import org.junit.Rule;
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Ensures that adding more than one {@link com.bumptech.glide.module.AppGlideModule} to a project
+ * Ensures that adding more than one {@link com.gangoogle.glide.module.AppGlideModule} to a project
  * will fail.
  */
 @RunWith(JUnit4.class)

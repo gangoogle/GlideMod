@@ -1,4 +1,4 @@
-package com.bumptech.glide.annotation.compiler.test;
+package com.gangoogle.glide.annotation.compiler.test;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

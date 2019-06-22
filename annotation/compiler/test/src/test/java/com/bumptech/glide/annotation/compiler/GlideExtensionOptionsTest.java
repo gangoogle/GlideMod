@@ -1,15 +1,15 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.test.Util.emptyAppModule;
-import static com.bumptech.glide.annotation.compiler.test.Util.subpackage;
+import static com.gangoogle.glide.annotation.compiler.test.Util.emptyAppModule;
+import static com.gangoogle.glide.annotation.compiler.test.Util.subpackage;
 import static com.google.testing.compile.CompilationSubject.assertThat;
 import static com.google.testing.compile.Compiler.javac;
 
-import com.bumptech.glide.annotation.compiler.test.CompilationProvider;
-import com.bumptech.glide.annotation.compiler.test.RegenerateResourcesRule;
-import com.bumptech.glide.annotation.compiler.test.SubDirectory;
-import com.bumptech.glide.annotation.compiler.test.TestDescription;
-import com.bumptech.glide.annotation.compiler.test.Util;
+import com.gangoogle.glide.annotation.compiler.test.CompilationProvider;
+import com.gangoogle.glide.annotation.compiler.test.RegenerateResourcesRule;
+import com.gangoogle.glide.annotation.compiler.test.SubDirectory;
+import com.gangoogle.glide.annotation.compiler.test.TestDescription;
+import com.gangoogle.glide.annotation.compiler.test.Util;
 import com.google.testing.compile.Compilation;
 import java.io.IOException;
 import javax.tools.JavaFileObject;

@@ -1,4 +1,4 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.mock;
@@ -9,14 +9,14 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide.RequestOptionsFactory;
-import com.bumptech.glide.load.engine.Engine;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.bumptech.glide.load.resource.gif.GifDrawable;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.ImageViewTargetFactory;
+import com.gangoogle.glide.Glide.RequestOptionsFactory;
+import com.gangoogle.glide.load.engine.Engine;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.gangoogle.glide.load.resource.gif.GifDrawable;
+import com.gangoogle.glide.request.RequestListener;
+import com.gangoogle.glide.request.RequestOptions;
+import com.gangoogle.glide.request.target.ImageViewTargetFactory;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

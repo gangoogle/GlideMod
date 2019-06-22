@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
@@ -9,7 +9,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Priority;
+import com.gangoogle.glide.Priority;
 import java.io.Closeable;
 import java.io.FileNotFoundException;
 import java.io.IOException;

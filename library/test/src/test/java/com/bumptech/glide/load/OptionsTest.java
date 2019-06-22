@@ -1,8 +1,8 @@
-package com.bumptech.glide.load;
+package com.gangoogle.glide.load;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Option.CacheKeyUpdater;
-import com.bumptech.glide.tests.KeyTester;
+import com.gangoogle.glide.load.Option.CacheKeyUpdater;
+import com.gangoogle.glide.tests.KeyTester;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import org.junit.Rule;

@@ -1,14 +1,14 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
 
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.ImageHeaderParser;
-import com.bumptech.glide.load.ImageHeaderParser.ImageType;
-import com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.testutil.TestResourceUtil;
+import com.gangoogle.glide.load.ImageHeaderParser;
+import com.gangoogle.glide.load.ImageHeaderParser.ImageType;
+import com.gangoogle.glide.load.engine.bitmap_recycle.ArrayPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.testutil.TestResourceUtil;
 import java.io.ByteArrayInputStream;
 import java.io.FilterInputStream;
 import java.io.IOException;

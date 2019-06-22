@@ -1,4 +1,4 @@
-com.bumptech.glideMod
+com.gangoogle.glideMod
 attr coordinatorLayoutStyle
 attr font
 attr fontProviderAuthority

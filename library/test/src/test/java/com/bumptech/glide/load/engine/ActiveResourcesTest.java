@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Matchers.any;
@@ -9,11 +9,11 @@ import static org.mockito.Mockito.verify;
 
 import android.os.Looper;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.engine.ActiveResources.DequeuedResourceCallback;
-import com.bumptech.glide.load.engine.ActiveResources.ResourceWeakReference;
-import com.bumptech.glide.load.engine.EngineResource.ResourceListener;
-import com.bumptech.glide.tests.GlideShadowLooper;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.engine.ActiveResources.DequeuedResourceCallback;
+import com.gangoogle.glide.load.engine.ActiveResources.ResourceWeakReference;
+import com.gangoogle.glide.load.engine.EngineResource.ResourceListener;
+import com.gangoogle.glide.tests.GlideShadowLooper;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
@@ -280,7 +280,7 @@ public class ActiveResourcesTest {
       verify(listener, never()).onResourceReleased(any(Key.class), any(EngineResource.class));
     } finally {
       resources.shutdown();
-      com.bumptech.glide.util.Executors.shutdownAndAwaitTermination(delegate);
+      com.gangoogle.glide.util.Executors.shutdownAndAwaitTermination(delegate);
     }
   }
 
@@ -327,7 +327,7 @@ public class ActiveResourcesTest {
       verify(listener, never()).onResourceReleased(any(Key.class), any(EngineResource.class));
     } finally {
       resources.shutdown();
-      com.bumptech.glide.util.Executors.shutdownAndAwaitTermination(delegate);
+      com.gangoogle.glide.util.Executors.shutdownAndAwaitTermination(delegate);
     }
   }
 

@@ -1,7 +1,7 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.LibraryGlideModule;
+import com.gangoogle.glide.annotation.GlideModule;
+import com.gangoogle.glide.module.LibraryGlideModule;
 
 @GlideModule
 public final class EmptyLibraryModule2 extends LibraryGlideModule {}

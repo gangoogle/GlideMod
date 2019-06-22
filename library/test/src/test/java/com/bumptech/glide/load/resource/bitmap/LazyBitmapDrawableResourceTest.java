@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.mock;
@@ -8,8 +8,8 @@ import static org.mockito.Mockito.when;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import com.bumptech.glide.load.engine.Initializable;
-import com.bumptech.glide.load.engine.Resource;
+import com.gangoogle.glide.load.engine.Initializable;
+import com.gangoogle.glide.load.engine.Resource;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

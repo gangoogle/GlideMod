@@ -1,8 +1,8 @@
-package com.bumptech.glide.load.engine.cache;
+package com.gangoogle.glide.load.engine.cache;
 
-import static com.bumptech.glide.load.engine.cache.MemoryCache.ResourceRemovedListener;
-import static com.bumptech.glide.tests.Util.anyResource;
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.load.engine.cache.MemoryCache.ResourceRemovedListener;
+import static com.gangoogle.glide.tests.Util.anyResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -15,9 +15,9 @@ import static org.mockito.Mockito.when;
 
 import android.content.ComponentCallbacks2;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.util.LruCache;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.util.LruCache;
 import java.security.MessageDigest;
 import org.junit.Test;
 import org.junit.runner.RunWith;

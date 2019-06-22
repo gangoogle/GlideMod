@@ -1,4 +1,4 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -9,18 +9,18 @@ import androidx.annotation.FloatRange;
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.DecodeFormat;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Option;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
-import com.bumptech.glide.request.BaseRequestOptions;
-import com.bumptech.glide.request.RequestOptions;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.DecodeFormat;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Option;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.engine.DiskCacheStrategy;
+import com.gangoogle.glide.load.resource.bitmap.DownsampleStrategy;
+import com.gangoogle.glide.request.BaseRequestOptions;
+import com.gangoogle.glide.request.RequestOptions;
 
 /**
- * Automatically generated from {@link com.bumptech.glide.annotation.GlideExtension} annotated classes.
+ * Automatically generated from {@link com.gangoogle.glide.annotation.GlideExtension} annotated classes.
  *
  * @see RequestOptions
  * @see ExtensionWithType

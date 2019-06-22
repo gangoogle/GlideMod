@@ -1,4 +1,4 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertFalse;
@@ -7,7 +7,7 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.request.Request;
+import com.gangoogle.glide.request.Request;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

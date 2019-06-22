@@ -1,4 +1,4 @@
-package com.bumptech.glide.tests;
+package com.gangoogle.glide.tests;
 
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assert_;
@@ -6,7 +6,7 @@ import static org.junit.Assert.fail;
 
 import android.support.annotation.CheckResult;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.load.Key;
+import com.gangoogle.glide.load.Key;
 import com.google.common.base.Equivalence;
 import com.google.common.testing.EquivalenceTester;
 import java.security.MessageDigest;
@@ -124,7 +124,7 @@ public final class KeyTester implements TestRule {
     }
 
     String getStringDigest(Key key) {
-      return com.bumptech.glide.util.Util.sha256BytesToHex(getDigest(key));
+      return com.gangoogle.glide.util.Util.sha256BytesToHex(getDigest(key));
     }
   }
 

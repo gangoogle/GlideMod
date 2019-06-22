@@ -1,6 +1,6 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;

@@ -1,13 +1,13 @@
-package com.bumptech.glide.load.resource.transcode;
+package com.gangoogle.glide.load.resource.transcode;
 
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static org.junit.Assert.assertArrayEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.load.resource.gif.GifDrawable;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.load.resource.gif.GifDrawable;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -15,9 +15,9 @@ import static org.mockito.Mockito.when;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.tests.Util;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.tests.Util;
+import com.gangoogle.glide.util.Preconditions;
 import com.google.common.collect.Range;
 import org.junit.Before;
 import org.junit.Test;

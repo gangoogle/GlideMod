@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -9,9 +9,9 @@ import static org.junit.Assert.assertTrue;
 import android.util.Base64;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.data.DataFetcher;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.data.DataFetcher;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;

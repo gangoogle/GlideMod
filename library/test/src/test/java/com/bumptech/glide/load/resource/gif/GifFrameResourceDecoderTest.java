@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.gif;
+package com.gangoogle.glide.load.resource.gif;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -6,10 +6,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import android.graphics.Bitmap;
-import com.bumptech.glide.gifdecoder.GifDecoder;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.gifdecoder.GifDecoder;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.util.Preconditions;
 import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;

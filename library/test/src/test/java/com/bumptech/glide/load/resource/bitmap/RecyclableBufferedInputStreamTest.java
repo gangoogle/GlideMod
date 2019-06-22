@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.ArrayPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package com.bumptech.glide.signature;
+package com.gangoogle.glide.signature;
 
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
@@ -6,8 +6,8 @@ import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.tests.KeyTester;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.tests.KeyTester;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import org.junit.After;

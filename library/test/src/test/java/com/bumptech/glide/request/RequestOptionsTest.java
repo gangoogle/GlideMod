@@ -1,4 +1,4 @@
-package com.bumptech.glide.request;
+package com.gangoogle.glide.request;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -8,16 +8,16 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.MultiTransformation;
-import com.bumptech.glide.load.Option;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.CircleCrop;
-import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
-import com.bumptech.glide.signature.ObjectKey;
-import com.bumptech.glide.util.Util;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.MultiTransformation;
+import com.gangoogle.glide.load.Option;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.engine.DiskCacheStrategy;
+import com.gangoogle.glide.load.resource.bitmap.CenterCrop;
+import com.gangoogle.glide.load.resource.bitmap.CircleCrop;
+import com.gangoogle.glide.load.resource.bitmap.DownsampleStrategy;
+import com.gangoogle.glide.signature.ObjectKey;
+import com.gangoogle.glide.util.Util;
 import com.google.common.testing.EqualsTester;
 import org.junit.Before;
 import org.junit.Test;

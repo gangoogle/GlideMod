@@ -1,4 +1,4 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;

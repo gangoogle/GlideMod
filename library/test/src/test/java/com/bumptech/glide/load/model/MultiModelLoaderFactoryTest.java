@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertThrows;
@@ -8,9 +8,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import androidx.core.util.Pools.Pool;
-import com.bumptech.glide.Registry.NoModelLoaderAvailableException;
-import com.bumptech.glide.tests.Util;
-import com.bumptech.glide.util.pool.FactoryPools;
+import com.gangoogle.glide.Registry.NoModelLoaderAvailableException;
+import com.gangoogle.glide.tests.Util;
+import com.gangoogle.glide.util.pool.FactoryPools;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;

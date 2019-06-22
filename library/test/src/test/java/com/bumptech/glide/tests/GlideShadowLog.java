@@ -1,4 +1,4 @@
-package com.bumptech.glide.tests;
+package com.gangoogle.glide.tests;
 
 import android.util.Log;
 import org.robolectric.annotation.Implementation;

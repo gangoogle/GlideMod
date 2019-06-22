@@ -1,4 +1,4 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.MethodSpec;

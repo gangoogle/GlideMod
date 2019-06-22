@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.gif;
+package com.gangoogle.glide.load.resource.gif;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertNull;
@@ -9,15 +9,15 @@ import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.gifdecoder.GifDecoder;
-import com.bumptech.glide.gifdecoder.GifHeader;
-import com.bumptech.glide.gifdecoder.GifHeaderParser;
-import com.bumptech.glide.load.ImageHeaderParser;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser;
-import com.bumptech.glide.tests.GlideShadowLooper;
+import com.gangoogle.glide.gifdecoder.GifDecoder;
+import com.gangoogle.glide.gifdecoder.GifHeader;
+import com.gangoogle.glide.gifdecoder.GifHeaderParser;
+import com.gangoogle.glide.load.ImageHeaderParser;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.load.resource.bitmap.DefaultImageHeaderParser;
+import com.gangoogle.glide.tests.GlideShadowLooper;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

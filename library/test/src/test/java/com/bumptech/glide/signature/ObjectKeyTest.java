@@ -1,6 +1,6 @@
-package com.bumptech.glide.signature;
+package com.gangoogle.glide.signature;
 
-import com.bumptech.glide.tests.KeyTester;
+import com.gangoogle.glide.tests.KeyTester;
 import java.security.NoSuchAlgorithmException;
 import org.junit.Rule;
 import org.junit.Test;

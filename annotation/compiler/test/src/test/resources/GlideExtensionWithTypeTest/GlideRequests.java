@@ -1,4 +1,4 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,19 +9,19 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RawRes;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.load.resource.gif.GifDrawable;
-import com.bumptech.glide.manager.Lifecycle;
-import com.bumptech.glide.manager.RequestManagerTreeNode;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.RequestOptions;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.RequestManager;
+import com.gangoogle.glide.load.resource.gif.GifDrawable;
+import com.gangoogle.glide.manager.Lifecycle;
+import com.gangoogle.glide.manager.RequestManagerTreeNode;
+import com.gangoogle.glide.request.RequestListener;
+import com.gangoogle.glide.request.RequestOptions;
 import java.io.File;
 import java.net.URL;
 
 /**
- * Includes all additions from methods in {@link com.bumptech.glide.annotation.GlideExtension}s
- * annotated with {@link com.bumptech.glide.annotation.GlideType}
+ * Includes all additions from methods in {@link com.gangoogle.glide.annotation.GlideExtension}s
+ * annotated with {@link com.gangoogle.glide.annotation.GlideType}
  *
  * <p>Generated code, do not modify
  */
@@ -173,10 +173,10 @@ public class GlideRequests extends RequestManager {
 
   @Override
   protected void setRequestOptions(@NonNull RequestOptions toSet) {
-    if (toSet instanceof com.bumptech.glide.test.GlideOptions) {
+    if (toSet instanceof com.gangoogle.glide.test.GlideOptions) {
       super.setRequestOptions(toSet);
     } else {
-      super.setRequestOptions(new com.bumptech.glide.test.GlideOptions().apply(toSet));
+      super.setRequestOptions(new com.gangoogle.glide.test.GlideOptions().apply(toSet));
     }
   }
 }

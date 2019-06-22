@@ -1,10 +1,10 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.bumptech.glide.load.ResourceDecoder;
-import com.bumptech.glide.load.model.ModelLoaderFactory;
-import com.bumptech.glide.load.resource.transcode.ResourceTranscoder;
+import com.gangoogle.glide.load.ResourceDecoder;
+import com.gangoogle.glide.load.model.ModelLoaderFactory;
+import com.gangoogle.glide.load.resource.transcode.ResourceTranscoder;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;

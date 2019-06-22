@@ -1,4 +1,4 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.eq;

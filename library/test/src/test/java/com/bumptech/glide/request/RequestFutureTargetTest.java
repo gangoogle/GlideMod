@@ -1,4 +1,4 @@
-package com.bumptech.glide.request;
+package com.gangoogle.glide.request;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,8 +12,8 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.request.target.SizeReadyCallback;
+import com.gangoogle.glide.load.DataSource;
+import com.gangoogle.glide.request.target.SizeReadyCallback;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;

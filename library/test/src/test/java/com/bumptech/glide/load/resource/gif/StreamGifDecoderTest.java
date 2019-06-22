@@ -1,12 +1,12 @@
-package com.bumptech.glide.load.resource.gif;
+package com.gangoogle.glide.load.resource.gif;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.bumptech.glide.load.ImageHeaderParser;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.ResourceDecoder;
-import com.bumptech.glide.load.engine.bitmap_recycle.LruArrayPool;
-import com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser;
+import com.gangoogle.glide.load.ImageHeaderParser;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.ResourceDecoder;
+import com.gangoogle.glide.load.engine.bitmap_recycle.LruArrayPool;
+import com.gangoogle.glide.load.resource.bitmap.DefaultImageHeaderParser;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;

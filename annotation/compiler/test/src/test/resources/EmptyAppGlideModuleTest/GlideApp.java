@@ -1,4 +1,4 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,15 +9,15 @@ import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import android.view.View;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.GlideBuilder;
 import java.io.File;
 
 /**
  * The entry point for interacting with Glide for Applications
  *
  * <p>Includes all generated APIs from all
- * {@link com.bumptech.glide.annotation.GlideExtension}s in source and dependent libraries.
+ * {@link com.gangoogle.glide.annotation.GlideExtension}s in source and dependent libraries.
  *
  * <p>This class is generated and should not be modified
  * @see Glide

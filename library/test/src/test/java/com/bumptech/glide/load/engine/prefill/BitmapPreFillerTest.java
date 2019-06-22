@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.prefill;
+package com.gangoogle.glide.load.engine.prefill;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -12,11 +12,11 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.graphics.Bitmap;
-import com.bumptech.glide.load.DecodeFormat;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.load.engine.cache.MemoryCache;
-import com.bumptech.glide.tests.Util.CreateBitmap;
-import com.bumptech.glide.util.Util;
+import com.gangoogle.glide.load.DecodeFormat;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.load.engine.cache.MemoryCache;
+import com.gangoogle.glide.tests.Util.CreateBitmap;
+import com.gangoogle.glide.util.Util;
 import com.google.common.collect.Range;
 import java.util.ArrayList;
 import java.util.List;

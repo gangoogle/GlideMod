@@ -6,7 +6,7 @@ INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5
 INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:3:5-36
+		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
 		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
 	android:versionName

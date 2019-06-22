@@ -1,7 +1,7 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.test.Util.emptyAppModule;
-import static com.bumptech.glide.annotation.compiler.test.Util.subpackage;
+import static com.gangoogle.glide.annotation.compiler.test.Util.emptyAppModule;
+import static com.gangoogle.glide.annotation.compiler.test.Util.subpackage;
 import static com.google.testing.compile.CompilationSubject.assertThat;
 import static com.google.testing.compile.Compiler.javac;
 import static org.junit.Assert.assertThrows;
@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Checks assertions on {@link com.bumptech.glide.annotation.GlideExtension}s for methods annotated
- * with {@link com.bumptech.glide.annotation.GlideType}.
+ * Checks assertions on {@link com.gangoogle.glide.annotation.GlideExtension}s for methods annotated
+ * with {@link com.gangoogle.glide.annotation.GlideType}.
  */
 // Ignore warnings since most methods use assertThrows.
 @SuppressWarnings("ResultOfMethodCallIgnored")

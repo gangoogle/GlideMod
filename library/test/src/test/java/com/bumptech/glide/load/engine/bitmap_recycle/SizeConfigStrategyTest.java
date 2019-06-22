@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.bitmap_recycle;
+package com.gangoogle.glide.load.engine.bitmap_recycle;
 
 import android.graphics.Bitmap;
 import com.google.common.testing.EqualsTester;

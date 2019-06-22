@@ -1,8 +1,8 @@
-package com.bumptech.glide.load;
+package com.gangoogle.glide.load;
 
-import static com.bumptech.glide.tests.Util.anyContext;
-import static com.bumptech.glide.tests.Util.anyResource;
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.anyContext;
+import static com.gangoogle.glide.tests.Util.anyResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;
@@ -13,9 +13,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.app.Application;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.tests.KeyTester;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.tests.KeyTester;
+import com.gangoogle.glide.tests.Util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import org.junit.Before;

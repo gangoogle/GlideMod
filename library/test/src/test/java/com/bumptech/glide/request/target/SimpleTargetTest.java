@@ -1,10 +1,10 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static org.mockito.Mockito.mock;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.bumptech.glide.request.transition.Transition;
+import com.gangoogle.glide.request.transition.Transition;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.gif;
+package com.gangoogle.glide.load.resource.gif;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -28,13 +28,13 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.view.View;
-import com.bumptech.glide.gifdecoder.GifDecoder;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.resource.gif.GifDrawableTest.BitmapTrackingShadowCanvas;
-import com.bumptech.glide.tests.GlideShadowLooper;
-import com.bumptech.glide.tests.TearDownGlide;
-import com.bumptech.glide.tests.Util;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.gifdecoder.GifDecoder;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.resource.gif.GifDrawableTest.BitmapTrackingShadowCanvas;
+import com.gangoogle.glide.tests.GlideShadowLooper;
+import com.gangoogle.glide.tests.TearDownGlide;
+import com.gangoogle.glide.tests.Util;
+import com.gangoogle.glide.util.Preconditions;
 import java.util.HashSet;
 import java.util.Set;
 import org.junit.After;

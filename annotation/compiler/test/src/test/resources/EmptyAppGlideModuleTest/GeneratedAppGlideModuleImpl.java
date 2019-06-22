@@ -1,9 +1,9 @@
-package com.bumptech.glide;
+package com.gangoogle.glide;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
 import android.util.Log;
-import com.bumptech.glide.test.EmptyAppModule;
+import com.gangoogle.glide.test.EmptyAppModule;
 import java.util.Collections;
 import java.util.Set;
 

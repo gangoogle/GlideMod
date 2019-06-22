@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.gif;
+package com.gangoogle.glide.load.resource.gif;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.inOrder;

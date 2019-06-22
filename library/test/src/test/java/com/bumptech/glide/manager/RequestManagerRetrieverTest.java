@@ -1,6 +1,6 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
-import static com.bumptech.glide.tests.BackgroundUtil.testInBackground;
+import static com.gangoogle.glide.tests.BackgroundUtil.testInBackground;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -17,11 +17,11 @@ import android.os.Looper;
 import android.support.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.tests.BackgroundUtil.BackgroundTester;
-import com.bumptech.glide.tests.GlideShadowLooper;
-import com.bumptech.glide.tests.TearDownGlide;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.RequestManager;
+import com.gangoogle.glide.tests.BackgroundUtil.BackgroundTester;
+import com.gangoogle.glide.tests.GlideShadowLooper;
+import com.gangoogle.glide.tests.TearDownGlide;
+import com.gangoogle.glide.tests.Util;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

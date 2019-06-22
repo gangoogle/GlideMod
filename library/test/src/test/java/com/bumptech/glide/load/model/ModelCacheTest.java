@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,8 +1,8 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.GlideOption.OVERRIDE_EXTEND;
+import static com.gangoogle.glide.annotation.GlideOption.OVERRIDE_EXTEND;
 
-import com.bumptech.glide.annotation.GlideOption;
+import com.gangoogle.glide.annotation.GlideOption;
 import com.squareup.javapoet.AnnotationSpec;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.CodeBlock;

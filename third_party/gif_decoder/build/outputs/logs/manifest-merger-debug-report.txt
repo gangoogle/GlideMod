@@ -4,7 +4,7 @@ ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManif
 INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
 INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
 	package
-		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:3:3-45
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:3:3-46
 		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
 		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
 	xmlns:android

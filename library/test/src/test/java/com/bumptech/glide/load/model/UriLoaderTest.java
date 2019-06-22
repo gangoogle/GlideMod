@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.model;
+package com.gangoogle.glide.load.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,9 +6,9 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.when;
 
 import android.net.Uri;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.data.DataFetcher;
-import com.bumptech.glide.util.Preconditions;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.data.DataFetcher;
+import com.gangoogle.glide.util.Preconditions;
 import java.io.File;
 import java.io.IOException;
 import org.junit.Before;

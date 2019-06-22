@@ -1,4 +1,4 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;

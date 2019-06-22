@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.resource.bitmap;
+package com.gangoogle.glide.load.resource.bitmap;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
@@ -8,12 +8,12 @@ import static org.mockito.Mockito.when;
 import android.app.Application;
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
-import com.bumptech.glide.load.engine.Resource;
-import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
-import com.bumptech.glide.request.target.Target;
-import com.bumptech.glide.tests.Util;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.GlideBuilder;
+import com.gangoogle.glide.load.engine.Resource;
+import com.gangoogle.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.gangoogle.glide.request.target.Target;
+import com.gangoogle.glide.tests.Util;
 import java.security.MessageDigest;
 import org.junit.After;
 import org.junit.Before;

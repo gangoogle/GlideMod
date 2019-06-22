@@ -1,4 +1,4 @@
-package com.bumptech.glide.manager;
+package com.gangoogle.glide.manager;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import com.bumptech.glide.Glide;
+import com.gangoogle.glide.Glide;
 
 /** A test activity to reproduce Issue #117: https://github.com/bumptech/glide/issues/117. */
 @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)

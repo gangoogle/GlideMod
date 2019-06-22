@@ -1,4 +1,4 @@
-package com.bumptech.glide.module;
+package com.gangoogle.glide.module;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Matchers.eq;
@@ -10,9 +10,9 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
-import com.bumptech.glide.Registry;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.GlideBuilder;
+import com.gangoogle.glide.Registry;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;

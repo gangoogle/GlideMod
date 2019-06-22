@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.cache;
+package com.gangoogle.glide.load.engine.cache;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -16,7 +16,7 @@ import static org.mockito.Mockito.when;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import com.bumptech.glide.util.LruCache;
+import com.gangoogle.glide.util.LruCache;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

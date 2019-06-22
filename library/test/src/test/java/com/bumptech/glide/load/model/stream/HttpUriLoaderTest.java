@@ -1,13 +1,13 @@
-package com.bumptech.glide.load.model.stream;
+package com.gangoogle.glide.load.model.stream;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.verify;
 
 import android.net.Uri;
-import com.bumptech.glide.load.Options;
-import com.bumptech.glide.load.model.GlideUrl;
-import com.bumptech.glide.load.model.ModelLoader;
+import com.gangoogle.glide.load.Options;
+import com.gangoogle.glide.load.model.GlideUrl;
+import com.gangoogle.glide.load.model.ModelLoader;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import org.junit.Before;

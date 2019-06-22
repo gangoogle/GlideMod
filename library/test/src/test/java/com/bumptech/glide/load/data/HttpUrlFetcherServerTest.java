@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.data;
+package com.gangoogle.glide.load.data;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Matchers.isA;
@@ -6,10 +6,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.model.GlideUrl;
-import com.bumptech.glide.load.model.Headers;
-import com.bumptech.glide.testutil.TestUtil;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.load.model.GlideUrl;
+import com.gangoogle.glide.load.model.Headers;
+import com.gangoogle.glide.testutil.TestUtil;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -31,9 +31,9 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 /**
- * Tests {@link com.bumptech.glide.load.data.HttpUrlFetcher} against server responses. Tests for
+ * Tests {@link com.gangoogle.glide.load.data.HttpUrlFetcher} against server responses. Tests for
  * behavior (connection/disconnection/options) should go in {@link
- * com.bumptech.glide.load.data.HttpUrlFetcherTest}, response handling should go here.
+ * com.gangoogle.glide.load.data.HttpUrlFetcherTest}, response handling should go here.
  */
 @RunWith(RobolectricTestRunner.class)
 @Config(manifest = Config.NONE, sdk = 18)

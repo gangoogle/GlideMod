@@ -4,9 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.bumptech.glide.GlideMod;
-import com.bumptech.glide.load.engine.BaseKey;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.gangoogle.glide.GlideMod;
+import com.gangoogle.glide.load.engine.BaseKey;
+import com.gangoogle.glide.load.engine.DiskCacheStrategy;
 
 public class MainActivity extends AppCompatActivity {
 

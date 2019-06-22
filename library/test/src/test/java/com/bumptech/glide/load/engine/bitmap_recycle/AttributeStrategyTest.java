@@ -1,4 +1,4 @@
-package com.bumptech.glide.load.engine.bitmap_recycle;
+package com.gangoogle.glide.load.engine.bitmap_recycle;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

@@ -1,6 +1,6 @@
-package com.bumptech.glide.annotation.compiler;
+package com.gangoogle.glide.annotation.compiler;
 
-import static com.bumptech.glide.annotation.compiler.RequestOptionsGenerator.BASE_REQUEST_OPTIONS_QUALIFIED_NAME;
+import static com.gangoogle.glide.annotation.compiler.RequestOptionsGenerator.BASE_REQUEST_OPTIONS_QUALIFIED_NAME;
 
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;

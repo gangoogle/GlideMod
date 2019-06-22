@@ -1,4 +1,4 @@
-package com.bumptech.glide.test;
+package com.gangoogle.glide.test;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -12,32 +12,32 @@ import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RawRes;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.RequestBuilder;
-import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.TransitionOptions;
-import com.bumptech.glide.load.DecodeFormat;
-import com.bumptech.glide.load.Key;
-import com.bumptech.glide.load.Option;
-import com.bumptech.glide.load.Transformation;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
-import com.bumptech.glide.request.BaseRequestOptions;
-import com.bumptech.glide.request.RequestListener;
+import com.gangoogle.glide.Glide;
+import com.gangoogle.glide.Priority;
+import com.gangoogle.glide.RequestBuilder;
+import com.gangoogle.glide.RequestManager;
+import com.gangoogle.glide.TransitionOptions;
+import com.gangoogle.glide.load.DecodeFormat;
+import com.gangoogle.glide.load.Key;
+import com.gangoogle.glide.load.Option;
+import com.gangoogle.glide.load.Transformation;
+import com.gangoogle.glide.load.engine.DiskCacheStrategy;
+import com.gangoogle.glide.load.resource.bitmap.DownsampleStrategy;
+import com.gangoogle.glide.request.BaseRequestOptions;
+import com.gangoogle.glide.request.RequestListener;
 import java.io.File;
 import java.net.URL;
 
 /**
  * Contains all public methods from {@link RequestBuilder<TranscodeType>}, all options from
- * {@link com.bumptech.glide.request.RequestOptions} and all generated options from
- * {@link com.bumptech.glide.annotation.GlideOption} in annotated methods in
- * {@link com.bumptech.glide.annotation.GlideExtension} annotated classes.
+ * {@link com.gangoogle.glide.request.RequestOptions} and all generated options from
+ * {@link com.gangoogle.glide.annotation.GlideOption} in annotated methods in
+ * {@link com.gangoogle.glide.annotation.GlideExtension} annotated classes.
  *
  * <p>Generated code, do not modify.
  *
  * @see RequestBuilder<TranscodeType>
- * @see com.bumptech.glide.request.RequestOptions
+ * @see com.gangoogle.glide.request.RequestOptions
  */
 @SuppressWarnings({
     "unused",

@@ -1,4 +1,4 @@
-package com.bumptech.glide.request.target;
+package com.gangoogle.glide.request.target;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -16,7 +16,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
-import com.bumptech.glide.request.transition.Transition;
+import com.gangoogle.glide.request.transition.Transition;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

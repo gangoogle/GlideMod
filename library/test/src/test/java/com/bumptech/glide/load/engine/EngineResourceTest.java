@@ -1,6 +1,6 @@
-package com.bumptech.glide.load.engine;
+package com.gangoogle.glide.load.engine;
 
-import static com.bumptech.glide.tests.Util.mockResource;
+import static com.gangoogle.glide.tests.Util.mockResource;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -11,7 +11,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.bumptech.glide.load.Key;
+import com.gangoogle.glide.load.Key;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
