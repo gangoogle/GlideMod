@@ -1,4 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.bumptech.glide.annotation.compiler.test">
+  package="com.bumptech.glideMod.annotation.compiler.test">
   <application />
 </manifest>

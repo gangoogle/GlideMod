@@ -21,7 +21,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.util.Preconditions;
 import com.bumptech.glide.util.Util;
@@ -86,10 +86,10 @@ public class RequestManagerRetriever implements Handler.Callback {
           // ApplicationLifecycle.
 
           // TODO(b/27524013): Factor out this Glide.get() call.
-          Glide glide = Glide.get(context.getApplicationContext());
+          GlideMod glideMod = GlideMod.get(context.getApplicationContext());
           applicationManager =
               factory.build(
-                  glide,
+                      glideMod,
                   new ApplicationLifecycle(),
                   new EmptyRequestManagerTreeNode(),
                   context.getApplicationContext());
@@ -375,10 +375,10 @@ public class RequestManagerRetriever implements Handler.Callback {
     RequestManager requestManager = current.getRequestManager();
     if (requestManager == null) {
       // TODO(b/27524013): Factor out this Glide.get() call.
-      Glide glide = Glide.get(context);
+      GlideMod glideMod = GlideMod.get(context);
       requestManager =
           factory.build(
-              glide, current.getGlideLifecycle(), current.getRequestManagerTreeNode(), context);
+                  glideMod, current.getGlideLifecycle(), current.getRequestManagerTreeNode(), context);
       current.setRequestManager(requestManager);
     }
     return requestManager;
@@ -428,10 +428,10 @@ public class RequestManagerRetriever implements Handler.Callback {
     RequestManager requestManager = current.getRequestManager();
     if (requestManager == null) {
       // TODO(b/27524013): Factor out this Glide.get() call.
-      Glide glide = Glide.get(context);
+      GlideMod glideMod = GlideMod.get(context);
       requestManager =
           factory.build(
-              glide, current.getGlideLifecycle(), current.getRequestManagerTreeNode(), context);
+                  glideMod, current.getGlideLifecycle(), current.getRequestManagerTreeNode(), context);
       current.setRequestManager(requestManager);
     }
     return requestManager;
@@ -467,7 +467,7 @@ public class RequestManagerRetriever implements Handler.Callback {
   public interface RequestManagerFactory {
     @NonNull
     RequestManager build(
-        @NonNull Glide glide,
+        @NonNull GlideMod glideMod,
         @NonNull Lifecycle lifecycle,
         @NonNull RequestManagerTreeNode requestManagerTreeNode,
         @NonNull Context context);
@@ -478,11 +478,11 @@ public class RequestManagerRetriever implements Handler.Callback {
         @NonNull
         @Override
         public RequestManager build(
-            @NonNull Glide glide,
+            @NonNull GlideMod glideMod,
             @NonNull Lifecycle lifecycle,
             @NonNull RequestManagerTreeNode requestManagerTreeNode,
             @NonNull Context context) {
-          return new RequestManager(glide, lifecycle, requestManagerTreeNode, context);
+          return new RequestManager(glideMod, lifecycle, requestManagerTreeNode, context);
         }
       };
 }

@@ -6,7 +6,7 @@ import android.util.Log;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.gifdecoder.GifDecoder;
 import com.bumptech.glide.gifdecoder.GifHeader;
 import com.bumptech.glide.gifdecoder.GifHeaderParser;
@@ -48,9 +48,9 @@ public class ByteBufferGifDecoder implements ResourceDecoder<ByteBuffer, GifDraw
   public ByteBufferGifDecoder(Context context) {
     this(
         context,
-        Glide.get(context).getRegistry().getImageHeaderParsers(),
-        Glide.get(context).getBitmapPool(),
-        Glide.get(context).getArrayPool());
+        GlideMod.get(context).getRegistry().getImageHeaderParsers(),
+        GlideMod.get(context).getBitmapPool(),
+        GlideMod.get(context).getArrayPool());
   }
 
   public ByteBufferGifDecoder(

@@ -56,7 +56,7 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
   private static final RequestOptions DOWNLOAD_ONLY_OPTIONS =
       diskCacheStrategyOf(DiskCacheStrategy.DATA).priority(Priority.LOW).skipMemoryCache(true);
 
-  protected final Glide glide;
+  protected final GlideMod glideMod;
   protected final Context context;
 
   @SuppressWarnings("WeakerAccess")
@@ -90,29 +90,29 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
   private RequestOptions requestOptions;
 
   public RequestManager(
-      @NonNull Glide glide,
+      @NonNull GlideMod glideMod,
       @NonNull Lifecycle lifecycle,
       @NonNull RequestManagerTreeNode treeNode,
       @NonNull Context context) {
     this(
-        glide,
+            glideMod,
         lifecycle,
         treeNode,
         new RequestTracker(),
-        glide.getConnectivityMonitorFactory(),
+        glideMod.getConnectivityMonitorFactory(),
         context);
   }
 
   // Our usage is safe here.
   @SuppressWarnings("PMD.ConstructorCallsOverridableMethod")
   RequestManager(
-      Glide glide,
+      GlideMod glideMod,
       Lifecycle lifecycle,
       RequestManagerTreeNode treeNode,
       RequestTracker requestTracker,
       ConnectivityMonitorFactory factory,
       Context context) {
-    this.glide = glide;
+    this.glideMod = glideMod;
     this.lifecycle = lifecycle;
     this.treeNode = treeNode;
     this.requestTracker = requestTracker;
@@ -135,10 +135,10 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
     lifecycle.addListener(connectivityMonitor);
 
     defaultRequestListeners =
-        new CopyOnWriteArrayList<>(glide.getGlideContext().getDefaultRequestListeners());
-    setRequestOptions(glide.getGlideContext().getDefaultRequestOptions());
+        new CopyOnWriteArrayList<>(glideMod.getGlideContext().getDefaultRequestListeners());
+    setRequestOptions(glideMod.getGlideContext().getDefaultRequestOptions());
 
-    glide.registerRequestManager(this);
+    glideMod.registerRequestManager(this);
   }
 
   protected synchronized void setRequestOptions(@NonNull RequestOptions toSet) {
@@ -345,7 +345,7 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
     lifecycle.removeListener(this);
     lifecycle.removeListener(connectivityMonitor);
     mainHandler.removeCallbacks(addSelfToLifecycle);
-    glide.unregisterRequestManager(this);
+    glideMod.unregisterRequestManager(this);
   }
 
   /**
@@ -557,7 +557,7 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
   @CheckResult
   public <ResourceType> RequestBuilder<ResourceType> as(
       @NonNull Class<ResourceType> resourceClass) {
-    return new RequestBuilder<>(glide, this, resourceClass, context);
+    return new RequestBuilder<>(glideMod, this, resourceClass, context);
   }
 
   /**
@@ -609,7 +609,7 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
     // the corresponding Activity or Fragment is destroyed because retaining any reference to the
     // RequestManager leaks memory. It's possible that there's some brief period of time during or
     // immediately after onDestroy where this is reasonable, but I can't think of why.
-    if (!isOwnedByUs && !glide.removeFromManagers(target) && target.getRequest() != null) {
+    if (!isOwnedByUs && !glideMod.removeFromManagers(target) && target.getRequest() != null) {
       Request request = target.getRequest();
       target.setRequest(null);
       request.clear();
@@ -647,7 +647,7 @@ public class RequestManager implements LifecycleListener, ModelTypes<RequestBuil
 
   @NonNull
   <T> TransitionOptions<?, T> getDefaultTransitionOptions(Class<T> transcodeClass) {
-    return glide.getGlideContext().getDefaultTransitionOptions(transcodeClass);
+    return glideMod.getGlideContext().getDefaultTransitionOptions(transcodeClass);
   }
 
   @Override

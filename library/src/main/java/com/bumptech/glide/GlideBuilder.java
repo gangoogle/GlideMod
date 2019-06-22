@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.util.ArrayMap;
 import android.util.Log;
-import com.bumptech.glide.Glide.RequestOptionsFactory;
+import com.bumptech.glide.GlideMod.RequestOptionsFactory;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.Engine;
 import com.bumptech.glide.load.engine.GlideException;
@@ -488,7 +488,7 @@ public final class GlideBuilder {
   }
 
   @NonNull
-  Glide build(@NonNull Context context) {
+  GlideMod build(@NonNull Context context) {
     if (sourceExecutor == null) {
       sourceExecutor = GlideExecutor.newSourceExecutor();
     }
@@ -551,7 +551,7 @@ public final class GlideBuilder {
     RequestManagerRetriever requestManagerRetriever =
         new RequestManagerRetriever(requestManagerFactory);
 
-    return new Glide(
+    return new GlideMod(
         context,
         engine,
         memoryCache,

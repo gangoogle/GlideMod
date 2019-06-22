@@ -3,7 +3,7 @@ package com.bumptech.glide.load.resource.gif;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
@@ -37,7 +37,7 @@ public class GifDrawableTransformation implements Transformation<GifDrawable> {
     // modify the dimensions of our GIF, here we create a stand in for a frame and pass it to the
     // transformation to see what the final transformed dimensions will be so that our drawable can
     // report the correct intrinsic width and height.
-    BitmapPool bitmapPool = Glide.get(context).getBitmapPool();
+    BitmapPool bitmapPool = GlideMod.get(context).getBitmapPool();
     Bitmap firstFrame = drawable.getFirstFrame();
     Resource<Bitmap> bitmapResource = new BitmapResource(firstFrame, bitmapPool);
     Resource<Bitmap> transformed = wrapped.transform(context, bitmapResource, outWidth, outHeight);

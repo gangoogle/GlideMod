@@ -13,7 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
 
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.gifdecoder.GifDecoder;
@@ -65,18 +65,18 @@ class GifFrameLoader {
   }
 
   GifFrameLoader(
-      Glide glide,
+      GlideMod glideMod,
       GifDecoder gifDecoder,
       int width,
       int height,
       Transformation<Bitmap> transformation,
       Bitmap firstFrame) {
     this(
-        glide.getBitmapPool(),
-        Glide.with(glide.getContext()),
+        glideMod.getBitmapPool(),
+        GlideMod.with(glideMod.getContext()),
         gifDecoder,
         null /*handler*/,
-        getRequestBuilder(Glide.with(glide.getContext()), width, height),
+        getRequestBuilder(GlideMod.with(glideMod.getContext()), width, height),
         transformation,
         firstFrame);
   }

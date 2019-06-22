@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
@@ -46,7 +46,7 @@ public class DrawableTransformation implements Transformation<Drawable> {
   @Override
   public Resource<Drawable> transform(
       @NonNull Context context, @NonNull Resource<Drawable> resource, int outWidth, int outHeight) {
-    BitmapPool bitmapPool = Glide.get(context).getBitmapPool();
+    BitmapPool bitmapPool = GlideMod.get(context).getBitmapPool();
     Drawable drawable = resource.get();
     Resource<Bitmap> bitmapResourceToTransform =
         DrawableToBitmapConverter.convert(bitmapPool, drawable, outWidth, outHeight);

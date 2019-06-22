@@ -2,7 +2,7 @@ package com.bumptech.glide.load.model;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.Registry;
 
 /**
@@ -11,7 +11,7 @@ import com.bumptech.glide.Registry;
  * <p>The application {@link android.content.Context} can be passed in to the constructor of the
  * factory when necessary. It's unsafe to retain {@link android.app.Activity} {@link
  * android.content.Context}s in factories. The {@link android.content.Context} can be obtained from
- * {@link com.bumptech.glide.module.LibraryGlideModule#registerComponents(Context, Glide, Registry)}
+ * {@link com.bumptech.glide.module.LibraryGlideModule#registerComponents(Context, GlideMod, Registry)}
  * in most cases.
  *
  * @param <T> The type of the model the {@link com.bumptech.glide.load.model.ModelLoader}s built by

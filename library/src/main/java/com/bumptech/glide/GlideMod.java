@@ -105,10 +105,10 @@ import java.util.Set;
  * RequestBuilder} and maintaining an {@link Engine}, {@link BitmapPool}, {@link
  * com.bumptech.glide.load.engine.cache.DiskCache} and {@link MemoryCache}.
  */
-public class Glide implements ComponentCallbacks2 {
+public class GlideMod implements ComponentCallbacks2 {
   private static final String DEFAULT_DISK_CACHE_DIR = "image_manager_disk_cache";
   private static final String TAG = "Glide";
-  private static volatile Glide glide;
+  private static volatile GlideMod glideMod;
   private static volatile boolean isInitializing;
 
   private final Engine engine;
@@ -170,17 +170,17 @@ public class Glide implements ComponentCallbacks2 {
    * @return the singleton
    */
   @NonNull
-  public static Glide get(@NonNull Context context) {
-    if (glide == null) {
+  public static GlideMod get(@NonNull Context context) {
+    if (glideMod == null) {
       GeneratedAppGlideModule annotationGeneratedModule = getAnnotationGeneratedGlideModules();
-      synchronized (Glide.class) {
-        if (glide == null) {
+      synchronized (GlideMod.class) {
+        if (glideMod == null) {
           checkAndInitializeGlide(context, annotationGeneratedModule);
         }
       }
     }
 
-    return glide;
+    return glideMod;
   }
 
   @GuardedBy("Glide.class")
@@ -205,18 +205,18 @@ public class Glide implements ComponentCallbacks2 {
    */
   @VisibleForTesting
   @Deprecated
-  public static synchronized void init(Glide glide) {
-    if (Glide.glide != null) {
+  public static synchronized void init(GlideMod glideMod) {
+    if (GlideMod.glideMod != null) {
       tearDown();
     }
-    Glide.glide = glide;
+    GlideMod.glideMod = glideMod;
   }
 
   @VisibleForTesting
   public static void init(@NonNull Context context, @NonNull GlideBuilder builder) {
     GeneratedAppGlideModule annotationGeneratedModule = getAnnotationGeneratedGlideModules();
-    synchronized (Glide.class) {
-      if (Glide.glide != null) {
+    synchronized (GlideMod.class) {
+      if (GlideMod.glideMod != null) {
         tearDown();
       }
       initializeGlide(context, builder, annotationGeneratedModule);
@@ -225,11 +225,11 @@ public class Glide implements ComponentCallbacks2 {
 
   @VisibleForTesting
   public static synchronized void tearDown() {
-    if (glide != null) {
-      glide.getContext().getApplicationContext().unregisterComponentCallbacks(glide);
-      glide.engine.shutdown();
+    if (glideMod != null) {
+      glideMod.getContext().getApplicationContext().unregisterComponentCallbacks(glideMod);
+      glideMod.engine.shutdown();
     }
-    glide = null;
+    glideMod = null;
   }
 
   @GuardedBy("Glide.class")
@@ -283,10 +283,10 @@ public class Glide implements ComponentCallbacks2 {
     if (annotationGeneratedModule != null) {
       annotationGeneratedModule.applyOptions(applicationContext, builder);
     }
-    Glide glide = builder.build(applicationContext);
+    GlideMod glideMod = builder.build(applicationContext);
     for (com.bumptech.glide.module.GlideModule module : manifestModules) {
       try {
-        module.registerComponents(applicationContext, glide, glide.registry);
+        module.registerComponents(applicationContext, glideMod, glideMod.registry);
       } catch (AbstractMethodError e) {
         throw new IllegalStateException(
             "Attempting to register a Glide v3 module. If you see this, you or one of your"
@@ -298,10 +298,10 @@ public class Glide implements ComponentCallbacks2 {
       }
     }
     if (annotationGeneratedModule != null) {
-      annotationGeneratedModule.registerComponents(applicationContext, glide, glide.registry);
+      annotationGeneratedModule.registerComponents(applicationContext, glideMod, glideMod.registry);
     }
-    applicationContext.registerComponentCallbacks(glide);
-    Glide.glide = glide;
+    applicationContext.registerComponentCallbacks(glideMod);
+    GlideMod.glideMod = glideMod;
   }
 
   @Nullable
@@ -343,7 +343,7 @@ public class Glide implements ComponentCallbacks2 {
         e);
   }
 
-  Glide(
+  GlideMod(
       @NonNull Context context,
       @NonNull Engine engine,
       @NonNull MemoryCache memoryCache,
@@ -701,7 +701,7 @@ public class Glide implements ComponentCallbacks2 {
         "You cannot start a load on a not yet attached View or a Fragment where getActivity() "
             + "returns null (which usually occurs when getActivity() is called before the Fragment "
             + "is attached or after the Fragment is destroyed).");
-    return Glide.get(context).getRequestManagerRetriever();
+    return GlideMod.get(context).getRequestManagerRetriever();
   }
 
   /**

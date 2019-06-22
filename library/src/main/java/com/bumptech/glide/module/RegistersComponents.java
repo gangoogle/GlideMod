@@ -2,7 +2,7 @@ package com.bumptech.glide.module;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.Registry;
 
 /** An internal interface, to be removed when {@link GlideModule}s are removed. */
@@ -18,9 +18,9 @@ interface RegistersComponents {
    * <p>This method will be called once and only once per implementation.
    *
    * @param context An Application {@link android.content.Context}.
-   * @param glide The Glide singleton that is in the process of being initialized.
+   * @param glideMod The Glide singleton that is in the process of being initialized.
    * @param registry An {@link com.bumptech.glide.Registry} to use to register components.
    */
   void registerComponents(
-      @NonNull Context context, @NonNull Glide glide, @NonNull Registry registry);
+          @NonNull Context context, @NonNull GlideMod glideMod, @NonNull Registry registry);
 }

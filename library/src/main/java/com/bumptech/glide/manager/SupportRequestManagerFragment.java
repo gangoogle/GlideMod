@@ -8,7 +8,7 @@ import android.support.annotation.VisibleForTesting;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.util.Synthetic;
 import java.util.Collections;
@@ -139,7 +139,7 @@ public class SupportRequestManagerFragment extends Fragment {
   private void registerFragmentWithRoot(@NonNull FragmentActivity activity) {
     unregisterFragmentWithRoot();
     rootRequestManagerFragment =
-        Glide.get(activity).getRequestManagerRetriever().getSupportRequestManagerFragment(activity);
+        GlideMod.get(activity).getRequestManagerRetriever().getSupportRequestManagerFragment(activity);
     if (!equals(rootRequestManagerFragment)) {
       rootRequestManagerFragment.addChildRequestManagerFragment(this);
     }

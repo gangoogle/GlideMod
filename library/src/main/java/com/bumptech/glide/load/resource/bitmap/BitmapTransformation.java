@@ -3,7 +3,7 @@ package com.bumptech.glide.load.resource.bitmap;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
@@ -78,7 +78,7 @@ public abstract class BitmapTransformation implements Transformation<Bitmap> {
               + outHeight
               + " less than or equal to zero and not Target.SIZE_ORIGINAL");
     }
-    BitmapPool bitmapPool = Glide.get(context).getBitmapPool();
+    BitmapPool bitmapPool = GlideMod.get(context).getBitmapPool();
     Bitmap toTransform = resource.get();
     int targetWidth = outWidth == Target.SIZE_ORIGINAL ? toTransform.getWidth() : outWidth;
     int targetHeight = outHeight == Target.SIZE_ORIGINAL ? toTransform.getHeight() : outHeight;

@@ -63,7 +63,7 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
   private final Context context;
   private final RequestManager requestManager;
   private final Class<TranscodeType> transcodeClass;
-  private final Glide glide;
+  private final GlideMod glideMod;
   private final GlideContext glideContext;
 
   @NonNull
@@ -86,16 +86,16 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
   @SuppressLint("CheckResult")
   @SuppressWarnings("PMD.ConstructorCallsOverridableMethod")
   protected RequestBuilder(
-      @NonNull Glide glide,
+      @NonNull GlideMod glideMod,
       RequestManager requestManager,
       Class<TranscodeType> transcodeClass,
       Context context) {
-    this.glide = glide;
+    this.glideMod = glideMod;
     this.requestManager = requestManager;
     this.transcodeClass = transcodeClass;
     this.context = context;
     this.transitionOptions = requestManager.getDefaultTransitionOptions(transcodeClass);
-    this.glideContext = glide.getGlideContext();
+    this.glideContext = glideMod.getGlideContext();
 
     initRequestListeners(requestManager.getDefaultRequestListeners());
     apply(requestManager.getDefaultRequestOptions());
@@ -104,7 +104,7 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
   @SuppressLint("CheckResult")
   @SuppressWarnings("PMD.ConstructorCallsOverridableMethod")
   protected RequestBuilder(Class<TranscodeType> transcodeClass, RequestBuilder<?> other) {
-    this(other.glide, other.requestManager, transcodeClass, other.context);
+    this(other.glideMod, other.requestManager, transcodeClass, other.context);
     model = other.model;
     isModelSet = other.isModelSet;
 

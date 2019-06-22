@@ -3,10 +3,10 @@
 -dontobfuscate
 -dontoptimize
 -keepattributes *
--keep class !com.bumptech.glide.repackaged.**,com.bumptech.glide.**
+-keep class !com.bumptech.glideMod.repackaged.**,com.bumptech.glideMod.**
 
 # Keep the entry point to this library, see META-INF\services\javax.annotation.processing.Processor
--keep class com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor
+-keep class com.bumptech.glideMod.annotation.compiler.GlideAnnotationProcessor
 
 
 # "duplicate definition of library class"
@@ -14,7 +14,7 @@
 # "duplicate definition of library class"
 -dontnote sun.tools.jar.**
 # Reflective accesses in com.google.common.util.concurrent.* and some others
--dontnote com.bumptech.glide.repackaged.com.google.common.**
+-dontnote com.bumptech.glideMod.repackaged.com.google.common.**
 # com.google.common.collect.* and some others (….common.*.*)
 -dontwarn com.google.j2objc.annotations.Weak
 # com.google.common.util.concurrent.FuturesGetChecked$GetCheckedTypeValidatorHolder$ClassValueValidator

@@ -8,7 +8,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
-import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideMod;
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.data.DataFetcher;
@@ -38,10 +38,10 @@ public class ThumbFetcher implements DataFetcher<InputStream> {
   }
 
   private static ThumbFetcher build(Context context, Uri uri, ThumbnailQuery query) {
-    ArrayPool byteArrayPool = Glide.get(context).getArrayPool();
+    ArrayPool byteArrayPool = GlideMod.get(context).getArrayPool();
     ThumbnailStreamOpener opener =
         new ThumbnailStreamOpener(
-            Glide.get(context).getRegistry().getImageHeaderParsers(),
+            GlideMod.get(context).getRegistry().getImageHeaderParsers(),
             query,
             byteArrayPool,
             context.getContentResolver());
