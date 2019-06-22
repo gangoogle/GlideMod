@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:3:3-45
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+application
+ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:5:5-19
+uses-sdk
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml

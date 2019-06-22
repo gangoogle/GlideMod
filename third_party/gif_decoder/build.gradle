@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    implementation "androidx.annotation:annotation:${ANDROID_X_VERSION}"
+
+    testImplementation project(':testutil')
+    testImplementation "androidx.annotation:annotation:${ANDROID_X_VERSION}"
+    testImplementation "com.google.truth:truth:${TRUTH_VERSION}"
+    testImplementation 'junit:junit:4.13-beta-3'
+    testImplementation "org.mockito:mockito-core:${MOCKITO_VERSION}"
+    testImplementation "org.robolectric:robolectric:${ROBOLECTRIC_VERSION}"
+}
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION as int
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION as int
+        targetSdkVersion TARGET_SDK_VERSION as int
+    }
+}
