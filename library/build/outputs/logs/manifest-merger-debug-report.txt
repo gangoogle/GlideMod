@@ -1,33 +1,33 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
+ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
+		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:1-5:12
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:2:11-69
+		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml:4:3-17
+ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml:4:3-17
 uses-sdk
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		ADDED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
-		INJECTED from D:\GitProject\GlideTest\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
+		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\library\src\main\AndroidManifest.xml
