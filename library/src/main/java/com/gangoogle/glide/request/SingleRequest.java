@@ -121,7 +121,7 @@ public final class SingleRequest<R>
   private int height;
   @Nullable private RuntimeException requestOrigin;
 
-  public static <R> SingleRequest<R> obtain(
+  public static <R> SingleRequest<R> obtainS(
       Context context,
       GlideContext glideContext,
       Object model,

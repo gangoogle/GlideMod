@@ -106,8 +106,8 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
   protected RequestBuilder(Class<TranscodeType> transcodeClass, RequestBuilder<?> other) {
     this(other.glideMod, other.requestManager, transcodeClass, other.context);
     model = other.model;
+    key = other.key;
     isModelSet = other.isModelSet;
-
     // This is safe because it will always mutate, no one else has access to the object.
     apply(other);
   }
@@ -366,6 +366,9 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
   public RequestBuilder<TranscodeType> load(@Nullable Object model, BaseKey baseKey) {
     return loadGeneric(model, baseKey);
   }
+
+
+
 
   @NonNull
   private RequestBuilder<TranscodeType> loadGeneric(@Nullable Object model, BaseKey key) {
@@ -1034,7 +1037,7 @@ public class RequestBuilder<TranscodeType> extends BaseRequestOptions<RequestBui
       int overrideWidth,
       int overrideHeight,
       Executor callbackExecutor) {
-    return SingleRequest.obtain(
+    return SingleRequest.obtainS(
         context,
         glideContext,
         model,

@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
 	package
-		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:3:3-46
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:3:3-46
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:2:1-6:12
 application
-ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml:5:5-19
+ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml:5:5-19
 uses-sdk
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidWorkSpace\GitSpace\GlideMod\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		ADDED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
+		INJECTED from D:\GitProject\GlideTest\third_party\gif_decoder\src\main\AndroidManifest.xml
