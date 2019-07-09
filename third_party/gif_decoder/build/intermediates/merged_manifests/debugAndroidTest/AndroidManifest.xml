@@ -3,7 +3,7 @@
     package="com.gangoogle.glideMod.gifdecoder.test" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="17"
         android:targetSdkVersion="27" />
 
     <instrumentation
