@@ -6,11 +6,19 @@ package com.gangoogle.glide.load.engine;
  * @Description: 自定义key
  */
 
-public interface BaseKey {
+public class BaseKey {
+    private String key;
+
+    public BaseKey(String key) {
+        this.key = key;
+    }
+
     /**
      * 获取自定义Key
      *
      * @return
      */
-    String getKey();
+    public String getKey() {
+        return this.key;
+    }
 }
