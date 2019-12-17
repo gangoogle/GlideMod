@@ -411,6 +411,7 @@ public final class Downsampler {
 //        if (degreesToRotate == 90 || degreesToRotate == 270) {
 //            orientedSourceWidth = sourceHeight;
 //            orientedSourceHeight = sourceWidth;
+        
 //        }
 
         final float exactScaleFactor =
