@@ -3,18 +3,26 @@ package com.test.glidetest;
 import android.Manifest;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.gangoogle.glide.GlideMod;
 import com.gangoogle.glide.load.engine.BaseKey;
 import com.gangoogle.glide.load.engine.DiskCacheStrategy;
+import com.gangoogle.glide.request.target.SimpleTarget;
+import com.gangoogle.glide.request.transition.Transition;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SimpleTimeZone;
 
 import io.reactivex.functions.Consumer;
 
@@ -37,10 +45,40 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadImg() {
-        final String videoPath = "/storage/emulated/0/DCIM/Camera/v0200f080000bgsjsrceae1efua6o8og.MP4";
+//        final String videoPath = "/storage/emulated/0/Pictures/Screenshots/Screenshot_20191212-084120.jpg";
+        final String videoPath = "/storage/emulated/0/DCIM/Camera/IMG_20191130_103146.jpg";
+//                final String videoPath = "/storage/emulated/0/DCIM/Camera/IMG_20191217_144134.jpg";
         GlideMod.with(this)
-                .load(videoPath, new BaseKey(videoPath))
+                .asBitmap()
+                .load(videoPath, new BaseKey(System.currentTimeMillis() + ""))
+                .dontTransform()
+                .dontAnimate()
+                .into(new SimpleTarget<Bitmap>(SimpleTarget.SIZE_ORIGINAL, SimpleTarget.SIZE_ORIGINAL) {
+                    @Override
+                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                        ((TextView) MainActivity.this.findViewById(R.id.tv_text))
+                                .setText("width:" + resource.getWidth() + "-height:" + resource.getHeight()
+                                        + "-des:" + resource.getDensity());
+
+                    }
+                });
+        GlideMod.with(this)
+                .load(videoPath, new BaseKey(System.currentTimeMillis() + ""))
+                .dontTransform()
+                .dontAnimate()
                 .into(ivImage);
+
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        Bitmap bitmap = BitmapFactory.decodeFile(videoPath, options);
+        options.inSampleSize = 1;
+        options.inScaled = false;
+        options.inJustDecodeBounds = false;
+
+        ((TextView) MainActivity.this.findViewById(R.id.tv_text_a))
+                .setText("原图：width:" + options.outWidth + "height:" + options.outHeight + "---\n" +
+                        "den:" + getResources().getDisplayMetrics().density + "denIn:" +
+                        getResources().getDisplayMetrics().densityDpi);
     }
 
     public void test(View view) {
@@ -54,4 +92,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+
+
 }

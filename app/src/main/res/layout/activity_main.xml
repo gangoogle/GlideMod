@@ -6,7 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="test"
+        android:text="跳转" />
 
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_text_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -15,11 +29,5 @@
         android:layout_weight="1"
         android:src="@mipmap/ic_launcher" />
 
-    <Button
-        android:onClick="test"
-        android:text="跳转"
-        android:id="@+id/bt_test"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
 
 </LinearLayout>
