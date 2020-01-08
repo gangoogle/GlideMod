@@ -37,7 +37,7 @@ public class SafeKeyGenerator {
                     });
 
 
-    public String getSafeKey(String key) {
+    public synchronized String getSafeKey(String key) {
         String safeKey;
         synchronized (loadIdToSafeHash) {
             safeKey = loadIdToSafeHash.get(key);
