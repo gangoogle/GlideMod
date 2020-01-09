@@ -3,6 +3,7 @@ package com.gangoogle.glide.request;
 import android.content.Context;
 import android.content.res.Resources.Theme;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.support.v4.util.Pools;
 import android.util.Log;
 import android.support.annotation.DrawableRes;
@@ -26,6 +27,8 @@ import com.gangoogle.glide.util.Synthetic;
 import com.gangoogle.glide.util.Util;
 import com.gangoogle.glide.util.pool.FactoryPools;
 import com.gangoogle.glide.util.pool.StateVerifier;
+import com.gangoogle.glideMod.BuildConfig;
+
 import java.util.List;
 import java.util.concurrent.Executor;
 
@@ -643,7 +646,9 @@ public final class SingleRequest<R>
     e.setOrigin(requestOrigin);
     int logLevel = glideContext.getLogLevel();
     if (logLevel <= maxLogLevel) {
-      Log.w(GLIDE_TAG, "Load failed for " + model + " with size [" + width + "x" + height + "]", e);
+      if(BuildConfig.DEBUG) {
+        Log.w(GLIDE_TAG, "Load failed for " + model + " with size [" + width + "x" + height + "]", e);
+      }
       if (logLevel <= Log.INFO) {
         e.logRootCauses(GLIDE_TAG);
       }

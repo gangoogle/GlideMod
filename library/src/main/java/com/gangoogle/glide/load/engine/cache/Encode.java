@@ -1,5 +1,7 @@
 package com.gangoogle.glide.load.engine.cache;
 
+import com.gangoogle.glideMod.gifdecoder.BuildConfig;
+
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 
@@ -27,7 +29,9 @@ public class Encode {
             }
             return new String(str);
         } catch (Exception e) {
-            e.printStackTrace();
+            if(BuildConfig.DEBUG) {
+                e.printStackTrace();
+            }
             return null;
         }
     }
@@ -55,7 +59,9 @@ public class Encode {
             }
             return new String(str);
         } catch (Exception e) {
-            e.printStackTrace();
+            if(BuildConfig.DEBUG) {
+                e.printStackTrace();
+            }
             return null;
         }
     }
