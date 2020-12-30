@@ -33,8 +33,11 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
 
     @Override
     protected void setResource(@Nullable Drawable resource) {
+        if (resource == null) {
+            view.setImageDrawable(null);
+            return;
+        }
         Bitmap bitmap = drawable2Bitmap(resource);
-
         /*传入bitmap参数，返回bitmap。*/
         ByteArrayOutputStream dataByte = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, dataByte);
@@ -42,7 +45,6 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
         opts.inSampleSize = 1;
         opts.inPreferredConfig = Bitmap.Config.RGB_565;
         bitmap = BitmapFactory.decodeByteArray(dataByte.toByteArray(), 0, dataByte.size(), opts);
-
         view.setImageDrawable(new BitmapDrawable(bitmap));
     }
 
