@@ -38,10 +38,14 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
     @Override
     protected void setResource(@Nullable Drawable resource) {
         if (resource == null) {
-            view.setImageDrawable(null);
+            view.setImageDrawable(resource);
             return;
         }
         Bitmap bitmap = drawable2Bitmap(resource);
+        if (bitmap == null) {
+            view.setImageDrawable(resource);
+            return;
+        }
         Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         bitmap = compressBitmap(bitmap);
         Log.d("bitmap", "new -ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
