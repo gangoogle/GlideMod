@@ -58,18 +58,21 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
         if (getBitmapSize(bitmap) < BITMAP_MAX_SIZE) {
             return bitmap;
         }
+        BitmapFactory.Options opts = new BitmapFactory.Options();
+        opts.inSampleSize = 1;
+        opts.inPreferredConfig = Bitmap.Config.RGB_565;
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         int quality = 100;
-        bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, quality, baos);
         // 循环判断压缩后图片是否超过限制大小
         while (baos.toByteArray().length > BITMAP_MAX_SIZE) {
             // 清空baos
             baos.reset();
-            bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
             quality -= 10;
+            bitmap.compress(Bitmap.CompressFormat.JPEG, quality, baos);
         }
-        Bitmap newBitmap = BitmapFactory.decodeStream(new ByteArrayInputStream(baos.toByteArray()), null, null);
-        return newBitmap;
+        bitmap = BitmapFactory.decodeByteArray(baos.toByteArray(), 0, baos.size(), opts);
+        return bitmap;
     }
 
     /**

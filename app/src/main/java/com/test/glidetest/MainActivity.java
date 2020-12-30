@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadImg() {
 //        final String videoPath = "/storage/emulated/0/Pictures/Screenshots/Screenshot_20191212-084120.jpg";
-        final String videoPath = "/storage/emulated/0/DCIM/Camera/yx-3-16093165421930.png";
+        final String videoPath = "/storage/emulated/0/DCIM/Camera/yx-3-16093322036070.png";
         final String videoPath2 = "/storage/emulated/0/DCIM/Camera/yx-3-16093175631670.jpg";
 //                final String videoPath = "/storage/emulated/0/DCIM/Camera/IMG_20191217_144134.jpg";
 //        GlideMod.with(this)
