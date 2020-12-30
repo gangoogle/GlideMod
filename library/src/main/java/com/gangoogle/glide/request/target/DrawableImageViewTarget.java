@@ -7,15 +7,19 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
+import android.os.Build;
+import android.util.Log;
 import android.widget.ImageView;
 import android.support.annotation.Nullable;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
 /**
  * A target for display {@link Drawable} objects in {@link ImageView}s.
  */
 public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
+    private final int BITMAP_MAX_SIZE = 100 * 1024 * 1024;
 
     public DrawableImageViewTarget(ImageView view) {
         super(view);
@@ -38,14 +42,44 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
             return;
         }
         Bitmap bitmap = drawable2Bitmap(resource);
-        /*传入bitmap参数，返回bitmap。*/
-        ByteArrayOutputStream dataByte = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, dataByte);
-        BitmapFactory.Options opts = new BitmapFactory.Options();
-        opts.inSampleSize = 1;
-        opts.inPreferredConfig = Bitmap.Config.RGB_565;
-        bitmap = BitmapFactory.decodeByteArray(dataByte.toByteArray(), 0, dataByte.size(), opts);
+        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+        bitmap = compressBitmap(bitmap);
+        Log.d("bitmap", "new -ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         view.setImageDrawable(new BitmapDrawable(bitmap));
+
+    }
+
+
+    private Bitmap compressBitmap(Bitmap bitmap) {
+        if (getBitmapSize(bitmap) < BITMAP_MAX_SIZE) {
+            return bitmap;
+        }
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        int quality = 100;
+        bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
+        // 循环判断压缩后图片是否超过限制大小
+        while (baos.toByteArray().length > BITMAP_MAX_SIZE) {
+            // 清空baos
+            baos.reset();
+            bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
+            quality -= 10;
+        }
+        Bitmap newBitmap = BitmapFactory.decodeStream(new ByteArrayInputStream(baos.toByteArray()), null, null);
+        return newBitmap;
+    }
+
+    /**
+     * 得到bitmap的大小
+     */
+    public static int getBitmapSize(Bitmap bitmap) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {    //API 19
+            return bitmap.getAllocationByteCount();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {//API 12
+            return bitmap.getByteCount();
+        }
+        // 在低版本中用一行的字节x高度
+        return ((bitmap.getRowBytes() * bitmap.getHeight()));                //earlier version
     }
 
     public static Bitmap drawable2Bitmap(Drawable drawable) {

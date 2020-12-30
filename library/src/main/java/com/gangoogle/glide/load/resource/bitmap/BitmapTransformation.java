@@ -68,32 +68,32 @@ import java.security.MessageDigest;
  */
 public abstract class BitmapTransformation implements Transformation<Bitmap> {
 
-    @NonNull
-    @Override
-    public final Resource<Bitmap> transform(
-            @NonNull Context context, @NonNull Resource<Bitmap> resource, int outWidth, int outHeight) {
-        if (!Util.isValidDimensions(outWidth, outHeight)) {
-            throw new IllegalArgumentException(
-                    "Cannot apply transformation on width: "
-                            + outWidth
-                            + " or height: "
-                            + outHeight
-                            + " less than or equal to zero and not Target.SIZE_ORIGINAL");
-        }
-        BitmapPool bitmapPool = GlideMod.get(context).getBitmapPool();
-        Bitmap toTransform = resource.get();
-        int targetWidth = outWidth == Target.SIZE_ORIGINAL ? toTransform.getWidth() : outWidth;
-        int targetHeight = outHeight == Target.SIZE_ORIGINAL ? toTransform.getHeight() : outHeight;
-        Bitmap transformed = transform(bitmapPool, toTransform, targetWidth, targetHeight);
-
-        final Resource<Bitmap> result;
-        if (toTransform.equals(transformed)) {
-            result = resource;
-        } else {
-            result = BitmapResource.obtain(transformed, bitmapPool);
-        }
-        return result;
+  @NonNull
+  @Override
+  public final Resource<Bitmap> transform(
+      @NonNull Context context, @NonNull Resource<Bitmap> resource, int outWidth, int outHeight) {
+    if (!Util.isValidDimensions(outWidth, outHeight)) {
+      throw new IllegalArgumentException(
+          "Cannot apply transformation on width: "
+              + outWidth
+              + " or height: "
+              + outHeight
+              + " less than or equal to zero and not Target.SIZE_ORIGINAL");
     }
+    BitmapPool bitmapPool = GlideMod.get(context).getBitmapPool();
+    Bitmap toTransform = resource.get();
+    int targetWidth = outWidth == Target.SIZE_ORIGINAL ? toTransform.getWidth() : outWidth;
+    int targetHeight = outHeight == Target.SIZE_ORIGINAL ? toTransform.getHeight() : outHeight;
+    Bitmap transformed = transform(bitmapPool, toTransform, targetWidth, targetHeight);
+
+    final Resource<Bitmap> result;
+    if (toTransform.equals(transformed)) {
+      result = resource;
+    } else {
+      result = BitmapResource.obtain(transformed, bitmapPool);
+    }
+    return result;
+  }
 
     /**
      * Transforms the given {@link android.graphics.Bitmap} based on the given dimensions and returns

@@ -1,35 +1,86 @@
 package com.gangoogle.glide.request.target;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
+import android.util.Log;
 import android.widget.ImageView;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 /**
  * A {@link com.gangoogle.glide.request.target.Target} that can display an {@link
  * android.graphics.Bitmap} in an {@link android.widget.ImageView}.
  */
 public class BitmapImageViewTarget extends ImageViewTarget<Bitmap> {
-  // Public API.
-  @SuppressWarnings("WeakerAccess")
-  public BitmapImageViewTarget(ImageView view) {
-    super(view);
-  }
+    private final int BITMAP_MAX_SIZE = 100 * 1024 * 1024;
 
-  /** @deprecated Use {@link #waitForLayout()} instead. */
-  // Public API.
-  @SuppressWarnings({"unused", "deprecation"})
-  @Deprecated
-  public BitmapImageViewTarget(ImageView view, boolean waitForLayout) {
-    super(view, waitForLayout);
-  }
+    // Public API.
+    @SuppressWarnings("WeakerAccess")
+    public BitmapImageViewTarget(ImageView view) {
+        super(view);
+    }
 
-  /**
-   * Sets the {@link android.graphics.Bitmap} on the view using {@link
-   * android.widget.ImageView#setImageBitmap(android.graphics.Bitmap)}.
-   *
-   * @param resource The bitmap to display.
-   */
-  @Override
-  protected void setResource(Bitmap resource) {
-    view.setImageBitmap(resource);
-  }
+    /**
+     * @deprecated Use {@link #waitForLayout()} instead.
+     */
+    // Public API.
+    @SuppressWarnings({"unused", "deprecation"})
+    @Deprecated
+    public BitmapImageViewTarget(ImageView view, boolean waitForLayout) {
+        super(view, waitForLayout);
+    }
+
+    /**
+     * Sets the {@link android.graphics.Bitmap} on the view using {@link
+     * android.widget.ImageView#setImageBitmap(android.graphics.Bitmap)}.
+     *
+     * @param resource The bitmap to display.
+     */
+    @Override
+    protected void setResource(Bitmap resource) {
+        if (resource == null) {
+            view.setImageBitmap(null);
+        }
+        Bitmap bitmap = resource;
+        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+        bitmap = compressBitmap(bitmap);
+        Log.d("bitmap", "new:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+        view.setImageBitmap(bitmap);
+    }
+
+
+    private Bitmap compressBitmap(Bitmap bitmap) {
+        if (getBitmapSize(bitmap) < BITMAP_MAX_SIZE) {
+            return bitmap;
+        }
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        int quality = 100;
+        bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
+        // 循环判断压缩后图片是否超过限制大小
+        while (baos.toByteArray().length > BITMAP_MAX_SIZE) {
+            // 清空baos
+            baos.reset();
+            bitmap.compress(Bitmap.CompressFormat.PNG, quality, baos);
+            quality -= 10;
+        }
+        Bitmap newBitmap = BitmapFactory.decodeStream(new ByteArrayInputStream(baos.toByteArray()), null, null);
+        return newBitmap;
+    }
+
+    /**
+     * 得到bitmap的大小
+     */
+    public static int getBitmapSize(Bitmap bitmap) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {    //API 19
+            return bitmap.getAllocationByteCount();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {//API 12
+            return bitmap.getByteCount();
+        }
+        // 在低版本中用一行的字节x高度
+        return ((bitmap.getRowBytes() * bitmap.getHeight()));                //earlier version
+    }
 }
