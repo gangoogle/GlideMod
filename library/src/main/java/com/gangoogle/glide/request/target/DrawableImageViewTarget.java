@@ -46,9 +46,9 @@ public class DrawableImageViewTarget extends ImageViewTarget<Drawable> {
             view.setImageDrawable(resource);
             return;
         }
-        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+//        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         bitmap = compressBitmap(bitmap);
-        Log.d("bitmap", "new -ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+//        Log.d("bitmap", "new -ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         view.setImageDrawable(new BitmapDrawable(bitmap));
 
     }

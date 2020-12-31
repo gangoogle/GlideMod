@@ -46,9 +46,9 @@ public class BitmapImageViewTarget extends ImageViewTarget<Bitmap> {
             return;
         }
         Bitmap bitmap = resource;
-        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+//        Log.d("bitmap", "ordinal:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         bitmap = compressBitmap(bitmap);
-        Log.d("bitmap", "new:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
+//        Log.d("bitmap", "new:" + bitmap.getConfig().ordinal() + "-size:" + getBitmapSize(bitmap));
         view.setImageBitmap(bitmap);
     }
 
