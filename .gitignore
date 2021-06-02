@@ -13,3 +13,5 @@
 .externalNativeBuild
 .idea/
 library/build/
+third_party/gif_decoder/build/intermediates/incremental/packageDebugResources/compile-file-map.properties
+third_party/gif_decoder/build/
