@@ -73,14 +73,24 @@ public abstract class ImageViewTarget<Z> extends ViewTarget<ImageView, Z>
             TransitionDrawable transitionDrawable = (TransitionDrawable) drawable;
             int drawableNum = transitionDrawable.getNumberOfLayers();
             Drawable drawableList[] = new Drawable[drawableNum];
+            boolean needCompress = false;
             for (int i = 0; i < drawableNum; i++) {
                 Drawable inDrawAble = transitionDrawable.getDrawable(i);
                 Bitmap bitmap = drawable2Bitmap(inDrawAble);
-                bitmap = compressBitmap(bitmap);
-                drawableList[i]=new BitmapDrawable(bitmap);
+                if (getBitmapSize(bitmap) > BITMAP_MAX_SIZE) {
+                    needCompress = true;
+                    bitmap = compressBitmap(bitmap);
+                    drawableList[i] = new BitmapDrawable(bitmap);
+                } else {
+                    drawableList[i] = new BitmapDrawable(bitmap);
+                }
             }
-            TransitionDrawable newTrans =  new TransitionDrawable(drawableList);
-            view.setImageDrawable(newTrans);
+            if (needCompress) {
+                TransitionDrawable newTrans = new TransitionDrawable(drawableList);
+                view.setImageDrawable(newTrans);
+            } else {
+                view.setImageDrawable(drawable);
+            }
             return;
         }
         Bitmap bitmap = drawable2Bitmap(drawable);
